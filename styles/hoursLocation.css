@@ -1,0 +1,24 @@
+.container-fluid {
+  width: 100%;
+  height: 100vh;
+  border-image: url("../img/Border.png");
+  border-image-slice: 110;
+  border-width: 69px;
+  border-style: solid;
+  border-image-repeat: stretch;
+
+  background-color: #f5f3ec;
+}
+footer {
+  width: 100%;
+  height: auto;
+  
+}
+div.footer__logo img {
+   max-width: 30px;
+   max-height: 50px;
+}
+
+.slideImageHP img{
+  overflow: hidden;
+}
