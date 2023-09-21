@@ -18,12 +18,21 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container-fluid">  
+      <div class="borderOverlay"></div>
       <main>
         <section class="slideImageHP">
-          <img src="../img/hour_location_img/pic_1.avif" alt="Location_1" />
+          <!-- <img src="../img/hour_location_img/pic_1.avif" alt="Location_1" /> -->
           <ul>
             <li><a href=""></a></li>
             <li><a href=""></a></li>
@@ -34,7 +43,7 @@
         </section>
         <section class="infoHP">
           <h1>HOURS & LOCATIONS</h1>
-          <img src="../img/triple_diamond.png" alt="triple_diamond" />
+          <!-- <img src="../img/triple_diamond.png" alt="triple_diamond" /> -->
           <a href="https://goo.gl/maps/68KneS8v2rYyehNq5" target="_blank"
             >1600 20th St, Denver, CO 80202</a
           >
@@ -79,33 +88,36 @@
       <!-- Footer -->
       <footer>
         <div class="footer__logo">
-          <img src="../img/Hosp_logo.png" alt="hosp_logo" width="150px" height="150px"/>
+          <img src="../img/Hosp_logo.png" alt="hosp_logo" width="50px" height="50px"/>
         </div>
-        <div>
+        <div class="footer__navigations">
           <div class="footer__social-links">
             <ul>
               <li>
-                <a href=""><span>facebook</span></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></i></a>
               </li>
               <li>
-                <a href=""><span>instagram</span></a>
+                <a href=""><i class="fa-brands fa-instagram" ></i></i></a>
               </li>
             </ul>
           </div>
           <div class="footer__menu-navs">
             <ul>
-              <li><a href="">JOIN THE OG FAMILY</a></li>
-              <li><a href="">GIFT CARDS</a></li>
-              <li><a href="">PRIVACY POLICY</a></li>
-              <li><a href="">PRESS</a></li>
-              <li><a href="">CONTACT</a></li>
-              <li><a href="">PRIVACY POLICY</a></li>
+              <li><a class="opt" href="">JOIN THE OG FAMILY</a></li>
+              <li><a class="opt" href="">GIFT CARDS</a></li>
+              <li><a class="opt" href="">PRIVACY POLICY</a></li>
+              <li><a class="opt" href="">PRESS</a></li>
+              <li><a class="opt" href="">CONTACT</a></li>
+              <li><a class="opt" href="">PRIVACY POLICY</a></li>
+              <li>
+                <a href="" target="_blank" class="button"
+                  >EMAIL SIGNUP</a
+                >
+              </li>
+
             </ul>
-            <button>
-              <a href="" target="_blank" rel="noopener noreferrer"
-                >EMAIL SIGNUP</a
-              >
-            </button>
+            
+            
           </div>
         </div>
       </footer>
