@@ -11,8 +11,10 @@ ul {
   position: relative;
   background-color: #f5f3ec;
   padding: 30px 52px 10px 52px !important;
+  font-family: "Martel Sans", sans-serif;
 }
 
+/* Border for Website  */
 .borderOverlay {
   position: fixed;
   left: 0;
@@ -20,13 +22,59 @@ ul {
   height: 102%;
   top: 0;
   border-width: 37px;
-  border-image: url(../img/Border.png);
+  border-image: url(../img/icons/Border.png);
   border-image-slice: 120;
   border-style: solid;
   border-image-repeat: stretch;
   z-index: 999;
   pointer-events: none;
 }
+/* Header */
+.header__contactInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.header__contactInfo a {
+  color: rgb(88, 88, 88);
+  text-decoration: none;
+  font-size: 7.3px;
+}
+.header__contactInfo a:hover {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header__absoluteNav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__absoluteNav-logo {
+  width: 25%;
+  height: auto;
+}
+.header__absoluteNav-menuLinks {
+  margin-left: -36px;
+  padding-top: 7px;
+}
+.header__absoluteNav-menuLinks > nav > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.header__absoluteNav-menuLinks > nav > ul > li > a {
+  font-size: 8px;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Footer */
+header,
 footer {
   width: 100%;
   height: auto;
@@ -36,6 +84,7 @@ div.footer__logo {
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: auto;
 }
 div.footer__logo img {
   display: block;
@@ -61,10 +110,10 @@ div.footer__logo img {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.footer__social-links ul li {
+.footer__social-links ul > li {
   margin: 2px;
 }
-.footer__social-links a {
+.footer__social-links ul > li > a {
   font-size: 10px;
   padding: 0px 3px;
   border-radius: 50%;
