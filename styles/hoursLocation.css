@@ -4,13 +4,17 @@
 ul {
   list-style: none;
 }
+a {
+  color: #253059 !important;
+  text-decoration: none !important;
+}
 
 .container-fluid {
   display: flex;
   flex-flow: wrap column;
   position: relative;
   background-color: #f5f3ec;
-  padding: 30px 52px 10px 52px !important;
+  padding: 60px 100px 44px 100px !important;
   font-family: "Martel Sans", sans-serif;
 }
 
@@ -35,13 +39,14 @@ ul {
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 14px;
   margin-bottom: 8px;
 }
 .header__contactInfo a {
   color: rgb(88, 88, 88);
   text-decoration: none;
-  font-size: 7.3px;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 .header__contactInfo a:hover {
   color: gray;
@@ -50,27 +55,66 @@ ul {
 }
 .header__absoluteNav {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .header__absoluteNav-logo {
   width: 25%;
   height: auto;
+  margin-top: 9px;
+}
+.header__absoluteNav-logo > img {
+  width: 100%;
+  height: auto;
+  max-width: 221px;
 }
 .header__absoluteNav-menuLinks {
-  margin-left: -36px;
-  padding-top: 7px;
+  margin-left: -37px;
+  padding-top: 37px;
 }
 .header__absoluteNav-menuLinks > nav > ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 9px;
+  gap: 22px;
 }
 
-.header__absoluteNav-menuLinks > nav > ul > li > a {
-  font-size: 8px;
-  color: #000;
-  font-weight: 600;
+.header__absoluteNav-menuLinks > nav > ul > li > a.opt {
+  font-size: 15px;
+  font-weight: 800;
+  display: inline-block;
+  position: relative;
+}
+.header__absoluteNav-menuLinks > nav > ul > li > a.opt:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 1.5px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.header__absoluteNav-menuLinks > nav > ul > li > a.opt:hover:after {
+  width: 100%;
+  left: 0;
+}
+a.active {
+  border-bottom: 3px #000 solid;
+}
+
+.header__absoluteNav-menuLinks > nav > ul > li > a.button {
+  border: 2px solid #000;
+  margin-left: -3px;
+  padding: 7px 25px;
+  font-size: 14.5px;
+  font-weight: 800;
+}
+.header__absoluteNav-menuLinks a.button:hover {
+  text-decoration: none;
+  background-color: #fbc165;
+  transition: ease 0.4s;
 }
 
 /* Footer */
@@ -86,8 +130,7 @@ div.footer__logo {
   width: 100%;
   height: auto;
 }
-div.footer__logo img {
-  display: block;
+div.footer__logo > img {
   width: 100%;
   height: auto;
   max-width: 26px;
@@ -105,15 +148,15 @@ div.footer__logo img {
   /* position: relative;
   left: -40px; */
 }
-.footer__social-links ul {
+.footer__social-links > ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.footer__social-links ul > li {
+.footer__social-links > ul > li {
   margin: 2px;
 }
-.footer__social-links ul > li > a {
+.footer__social-links > ul > li > a {
   font-size: 10px;
   padding: 0px 3px;
   border-radius: 50%;
@@ -135,7 +178,7 @@ div.footer__logo img {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-.footer__menu-navs ul {
+.footer__menu-navs > ul {
   /* position: relative;
   right: 10px; */
   margin-right: 0px;
@@ -143,19 +186,17 @@ div.footer__logo img {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.footer__menu-navs ul > li {
+.footer__menu-navs > ul > li {
   margin: 5px;
   width: max-content;
 }
-.footer__menu-navs ul > li > a.opt {
+.footer__menu-navs > ul > li > a.opt {
   font-size: 9px;
-  color: #000;
   font-weight: 500;
   display: inline-block;
   position: relative;
-  text-decoration: none;
 }
-.footer__menu-navs ul > li > a.opt:after {
+.footer__menu-navs > ul > li > a.opt:after {
   background: none repeat scroll 0 0 transparent;
   content: "";
   display: block;
@@ -166,11 +207,11 @@ div.footer__logo img {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.footer__menu-navs ul > li > a.opt:hover:after {
+.footer__menu-navs > ul > li > a.opt:hover:after {
   width: 100%;
   left: 0;
 }
-.footer__menu-navs a.button {
+.footer__menu-navs > ul > li > a.button {
   color: #000;
   border: 1px solid #000;
   padding: 4px 14px;
