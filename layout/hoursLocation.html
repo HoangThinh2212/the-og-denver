@@ -11,6 +11,10 @@
     />
     <link rel="stylesheet" href="../styles/hoursLocation.css" />
 
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="../styles/flickity.css" />
+    <!-- Flickity Fade CSS -->
+    <link rel="stylesheet" href="../styles/flickity-fade.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -61,12 +65,20 @@
             <nav>
               <!-- List Navigations -->
               <ul>
-                <li><a href="./hoursLocation.html"class="opt active">HOURS & LOCATION</a></li>
-                <li><a href="./menus.html"class="opt">MENUS</a></li>
-                <li><a href="./ourStory.html"class="opt">OUR STORY</a></li>
-                <li><a href="./happenings.html"class="opt">HAPPENINGS</a></li>
-                <li><a href="./privateEvent.html"class="opt">PRIVATE EVENTS</a></li>
-                <li><a href="./orderOnline.html"class="opt">ORDER ONLINE</a></li>
+                <li>
+                  <a href="./hoursLocation.html" class="opt active"
+                    >HOURS & LOCATION</a
+                  >
+                </li>
+                <li><a href="./menus.html" class="opt">MENUS</a></li>
+                <li><a href="./ourStory.html" class="opt">OUR STORY</a></li>
+                <li><a href="./happenings.html" class="opt">HAPPENINGS</a></li>
+                <li>
+                  <a href="./privateEvent.html" class="opt">PRIVATE EVENTS</a>
+                </li>
+                <li>
+                  <a href="./orderOnline.html" class="opt">ORDER ONLINE</a>
+                </li>
                 <li><a href="#" class="button">RESERVATIONS</a></li>
               </ul>
               <!-- Button for Appointment -->
@@ -78,14 +90,42 @@
       <!-- Content -->
       <main>
         <section class="slideImageHP">
-          <!-- <img src="../img/hour_location_img/pic_1.avif" alt="Location_1" /> -->
-          <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-          </ul>
+          <!-- Flickity Fade -->
+          <div
+            class="carousel"
+            data-flickity='{ "fade": true, "imagesLoaded": true }'
+          >
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                src="../img/hour_location_img/pic_1.avif"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                src="../img/hour_location_img/pic_2.avif"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                src="../img/hour_location_img/pic_3.avif"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                src="../img/hour_location_img/pic_4.avif"
+              />
+            </div>
+            <div class="carousel-cell">
+              <img
+                class="carousel-cell-image"
+                src="../img/hour_location_img/pic_5.avif"
+              />
+            </div>
+          </div>
         </section>
         <section class="infoHP">
           <h1>HOURS & LOCATIONS</h1>
@@ -185,5 +225,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Flickity JS -->
+    <script src="../js/flickity.js"></script>
+    <!-- Flickity Fade JS -->
+    <script src="../js/flickity-fade.js"></script>
   </body>
 </html>
