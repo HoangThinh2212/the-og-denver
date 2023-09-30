@@ -120,6 +120,7 @@ a.active {
 /* Flickity Fade Slide CSS */
 .carousel {
   margin: 20px 0;
+  position: relative;
 }
 
 .carousel-cell {
@@ -143,6 +144,47 @@ a.active {
   border: 1px solid black;
 }
 
+/* fa-play fa-pause */
+#playPauseButton,
+#playIcon,
+#pauseIcon,
+#playPauseButton:focus,
+#playIcon:focus,
+#pauseIcon:focus {
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background: transparent;
+}
+
+.fa-play:before {
+  content: "";
+  display: block;
+  background-image: url(../img/icons/fa-play.png) !important;
+  background-size: contain;
+  width: 19px;
+  height: 21px;
+  background-repeat: no-repeat;
+  transform: none;
+  color: transparent;
+  background-color: transparent;
+}
+.fa-pause:before {
+  content: "";
+  display: block;
+  background-image: url(../img/icons/fa-pause.png) !important;
+  background-size: contain;
+  width: 19px;
+  height: 21px;
+  background-repeat: no-repeat;
+  transform: none;
+  color: transparent;
+  background-color: transparent;
+}
 /* Footer */
 header,
 footer {
