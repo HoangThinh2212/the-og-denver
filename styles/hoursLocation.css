@@ -131,6 +131,8 @@ a.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .carousel.is-fullscreen .carousel-cell {
