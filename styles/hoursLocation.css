@@ -13,7 +13,7 @@ a {
 
 .container-fluid {
   display: flex;
-  flex-flow: wrap column;
+  flex-flow: nowrap column;
   position: relative;
   background-color: #f5f3ec;
   padding: 60px 100px 44px 100px !important;
@@ -194,12 +194,16 @@ a.active {
 
 /* infoHL */
 section.infoHL {
-  margin: 28px;
-  padding: 40px;
+  margin-top: 50px;
+  padding-top: 43px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-flow: nowrap column;
   align-items: center;
+}
+section.infoHL h1{
+  font-weight: 900;
+  font-size: 60px;
+  font-stretch: condensed ;
 }
 img.tripleDiamond {
   width: 100%;
@@ -214,11 +218,6 @@ section.infoHL p{
   font-family: Arial, Helvetica, sans-serif;
 }
 /* Footer */
-header,
-footer {
-  width: 100%;
-  height: auto;
-}
 div.footer__logo {
   display: flex;
   align-items: center;
