@@ -235,6 +235,41 @@ section.infoHL p {
   font-weight: 100;
   font-family: "bilo";
 }
+/* Map Visual */
+section.mapVisual {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+}
+section.mapVisual iframe {
+  width: 85vw;
+  height: 62vh;
+  max-width: 100vw;
+  max-height: auto;
+}
+
+div.mapVisual__attribute > div.logo_sticky {
+  position: absolute;
+  margin: 0;
+  top: 42%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index:20;
+  width: 7vw;
+  height: auto;
+}
+div.mapVisual__attribute > div.logo_sticky > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+div.mapVisual__attribute > button {
+display: flex;
+}
 /* Footer */
 div.footer__logo {
   display: flex;
