@@ -272,7 +272,7 @@ div.mapVisual__attribute > div.logo_sticky > img {
   object-fit: contain;
 }
 
-div.mapVisual__attribute > button {
+div.mapVisual__attribute  button {
   display: flex;
   position: absolute;
   margin: 0;
@@ -281,6 +281,17 @@ div.mapVisual__attribute > button {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 20;
+  border-radius: 0;
+  border: 2px solid #000;
+  padding: 0.5rem 1.5rem 0.6rem 1.5rem;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+div.mapVisual__attribute  button:hover {
+  background-color: #fcba4f;
+  border-color: #1c2c59;
+  transition: ease 0.4s;
 }
 /* Footer */
 div.footer__logo {
@@ -368,7 +379,6 @@ div.footer__logo > img {
   left: 0;
 }
 .footer__menu-navs > ul > li > a.button {
-  color: #000;
   border: 2px solid #000;
   padding: 6px 25px;
   font-size: 15px;
@@ -377,6 +387,6 @@ div.footer__logo > img {
 
 .footer__menu-navs a.button:hover {
   text-decoration: none;
-  background-color: #fbc165;
+  background-color: #fcba4f;
   transition: ease 0.4s;
 }
