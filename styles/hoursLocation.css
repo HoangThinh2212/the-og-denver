@@ -202,13 +202,13 @@ section.infoHL {
   align-items: center;
   text-align: center;
 }
-section.infoHL h1 {
+section.infoHL > h1 {
   font-weight: 900;
   font-size: 62px;
   font-stretch: semi-condensed;
   font-family: "bicyclette";
 }
-img.tripleDiamond {
+section.infoHL > img.tripleDiamond {
   width: 100%;
   height: 100%;
   max-width: 113px;
@@ -222,13 +222,17 @@ section.infoHL a {
   text-align: center;
   width: 140px;
 }
-section.infoHL h6 {
+section.infoHL a:hover {
+  color: rgba(28, 44, 89, 0.7) !important;
+  transition: ease 0.1s;
+}
+section.infoHL > h6 {
   font-weight: 900;
   font-size: 17px;
   margin: 20px 0 -7px 0;
   font-family: "bilo";
 }
-section.infoHL p {
+section.infoHL > p {
   margin: 9px 0;
   width: 70vw;
   font-size: 17px;
@@ -237,13 +241,14 @@ section.infoHL p {
 }
 /* Map Visual */
 section.mapVisual {
+  margin: 66px 0 7px 0;
   width: 100%;
   height: auto;
   display: flex;
   flex-flow: column nowrap;
   position: relative;
 }
-section.mapVisual iframe {
+section.mapVisual > iframe {
   width: 85vw;
   height: 62vh;
   max-width: 100vw;
@@ -257,7 +262,7 @@ div.mapVisual__attribute > div.logo_sticky {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index:20;
+  z-index: 20;
   width: 7vw;
   height: auto;
 }
@@ -268,7 +273,14 @@ div.mapVisual__attribute > div.logo_sticky > img {
 }
 
 div.mapVisual__attribute > button {
-display: flex;
+  display: flex;
+  position: absolute;
+  margin: 0;
+  top: 79%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 20;
 }
 /* Footer */
 div.footer__logo {
@@ -282,8 +294,8 @@ div.footer__logo {
 div.footer__logo > img {
   width: 100%;
   height: auto;
-  max-width: 24px;
-  max-height: 44px;
+  max-width: 26px;
+  max-height: 50px;
 }
 .footer__navigations {
   display: flex;
