@@ -202,8 +202,9 @@ section.infoHL {
 }
 section.infoHL h1{
   font-weight: 900;
-  font-size: 60px;
-  font-stretch: condensed ;
+  font-size: 62px;
+  font-stretch: semi-condensed ;
+  font-family: "bicyclette";
 }
 img.tripleDiamond {
   width: 100%;
