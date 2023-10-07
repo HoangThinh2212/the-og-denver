@@ -386,7 +386,7 @@ div.footer__logo > img {
 }
 .footer__menu-navs > ul > li > a.opt:hover:after {
   width: 100%;
-  height: 2px;
+  height: 3px;
   left: 0;
 }
 .footer__menu-navs > ul > li > a.button {
