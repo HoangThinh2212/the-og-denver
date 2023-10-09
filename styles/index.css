@@ -140,9 +140,7 @@
   }
   /* No fixed navbar */
   .header__fixedNav-logo {
-    width: 25%;
-    height: auto;
-    margin-top: 9px;
+   /* tạm thời chưa có đang làm  */
   }
   .header__fixedNav-logo img {
     display: none;
