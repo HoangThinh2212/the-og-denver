@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>The OG | Craveable Breakfast & Brunch</title>
     <link
       rel="shortcut icon"
       href="/img/icons/Logo_sticky.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/styles/hoursLocation.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/common.css" />
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -113,6 +118,7 @@
             <i id="playIcon" class="fas fa-play"></i>
             <i id="pauseIcon" class="fas fa-pause"></i>
           </button>
+
           <div class="carousel">
             <div class="carousel-cell">
               <img
@@ -145,13 +151,11 @@
               />
             </div>
           </div>
-          <span id="infoHL"></span>
-
-          <a onclick="navigateToElement('infoHL')" class="arrow-info"
+          <a href="#infoHL" class="arrow-info"
             ><i class="fa-solid fa-angle-down"></i
           ></a>
         </section>
-
+        <span id="infoHL"></span>
         <section
           class="infoHL"
           data-aos="fade-up"
@@ -371,15 +375,6 @@
 
         isAutoplayPlaying = !isAutoplayPlaying;
       });
-    </script>
-
-    <!-- Test link -->
-    <script>
-      function navigateToElement(targetId) {
-        const targetElement = document.getElementById(targetId);
-        const targetPosition = targetElement.offsetTop;
-        window.scrollTo({ top: targetPosition, behavior: "smooth" });
-      }
     </script>
   </body>
 </html>
