@@ -232,7 +232,7 @@ a.active {
   border: none;
   outline: none;
   position: absolute;
-  top: 27.5%;
+  top: 72.3%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -264,7 +264,7 @@ a.active {
 }
 a.arrow-info {
   position: absolute;
-  top: 31.7%;
+  top: 89.7%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
