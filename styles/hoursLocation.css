@@ -56,8 +56,7 @@ a {
 }
 .header__fixedNav {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
 }
 /* When scroll, add these classes to create fixed navbar */
 .header__fixedNav-active {

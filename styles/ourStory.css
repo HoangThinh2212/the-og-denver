@@ -1,375 +1,371 @@
 * {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    color: #1c2c59;
-  }
-  ul {
-    list-style: none;
-  }
-  a {
-    color: #253059 !important;
-    text-decoration: none !important;
-  }
-  .container-fluid {
-    display: flex;
-    flex-flow: nowrap column;
-    position: relative;
-    background-color: #f5f3ec;
-    padding: 60px 100px 44px 100px !important;
-    /* font-family: "Martel Sans", sans-serif; */
-    font-family: "bilo";
-  }
-  /* Border for Website  */
-  .borderOverlay {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-width: 76px;
-    border-image: url(/img/icons/Border.png);
-    border-image-slice: 122;
-    border-style: solid;
-    border-image-repeat: stretch;
-    z-index: 999;
-    pointer-events: none;
-  }
-  /* Header */
-  .header__contactInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 14px;
-    margin-bottom: 8px;
-  }
-  .header__contactInfo a {
-    color: rgb(88, 88, 88);
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: 1px;
-  }
-  .header__contactInfo a:hover {
-    color: gray;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .header__fixedNav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  /* When scroll, add these classes to create fixed navbar */
-  .header__fixedNav-active {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    /* Create fixed */
-    overflow: hidden;
-    background-color: #f1f1f1;
-    transition: 0.1s;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-bottom: 2px solid black;
-    z-index: 30;
-  }
-  .header__fixedNav-menuLinks-active {
-    margin-left: 15px;
-    padding: 86px 0 20px 0;
-    /* padding-top: 86px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  color: #1c2c59;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #253059 !important;
+  text-decoration: none !important;
+}
+.container-fluid {
+  display: flex;
+  flex-flow: nowrap column;
+  position: relative;
+  background-color: #f5f3ec;
+  padding: 60px 100px 44px 100px !important;
+  /* font-family: "Martel Sans", sans-serif; */
+  font-family: "bilo";
+}
+/* Border for Website  */
+.borderOverlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 76px;
+  border-image: url(/img/icons/Border.png);
+  border-image-slice: 122;
+  border-style: solid;
+  border-image-repeat: stretch;
+  z-index: 999;
+  pointer-events: none;
+}
+/* Header */
+.header__contactInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+.header__contactInfo a {
+  color: rgb(88, 88, 88);
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.header__contactInfo a:hover {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header__fixedNav {
+  display: flex;
+  flex-flow: row nowrap;
+}
+/* When scroll, add these classes to create fixed navbar */
+.header__fixedNav-active {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* Create fixed */
+  overflow: hidden;
+  background-color: #f1f1f1;
+  transition: 0.1s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid black;
+  z-index: 30;
+}
+.header__fixedNav-menuLinks-active {
+  margin-left: 15px;
+  padding: 86px 0 20px 0;
+  /* padding-top: 86px;
     padding-bottom: 20px; */
-  }
-  .header__fixedNav-menuLinks-active nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 21px;
-  }
-  .header__fixedNav-menuLinks-active nav ul li a.opt {
-    font-size: 17px;
-    font-weight: 600;
-    display: inline-block;
-    position: relative;
-  }
-  .header__fixedNav-menuLinks-active nav ul li a.opt:after {
-    background: none repeat scroll 0 0 transparent;
-    content: "";
-    display: block;
-    height: 1.5px;
-    left: 50%;
-    position: absolute;
-    background: #000;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  .header__fixedNav-menuLinks-active nav ul li a.opt:hover:after {
-    width: 100%;
-    height: 2px;
-    left: 0;
-  }
-  .header__fixedNav-menuLinks-active nav ul li a.active {
-    border-bottom: 3px #000 solid;
-  }
-  .header__fixedNav-menuLinks-active nav ul li a.button {
-    border: 2px solid #000;
-    margin-left: -3px;
-    padding: 9px 25px 9px 25px;
-    font-size: 15.7px;
-    font-weight: 600;
-  }
-  .header__fixedNav-menuLinks-active a.button:hover {
-    text-decoration: none;
-    background-color: #fbc165;
-    transition: ease 0.4s;
-  }
-  .header__fixedNav-logo img#logo.active {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 221px;
-  }
-  .header__fixedNav-logo img#logo-fixedNav.active {
-    display: block;
-    width: 100%;
-    height: 42%;
-    margin-left: 99px;
-    margin-top: 60px;
-    max-width: 92px;
-  }
-  /* No fixed navbar */
-  .header__fixedNav-logo {
-    width: 25%;
-    height: auto;
-    margin-top: 9px;
-  }
-  .header__fixedNav-logo img {
-    display: none;
-    width: 100%;
-    height: auto;
-    max-width: 221px;
-  }
-  .header__fixedNav-menuLinks {
-    margin-left: -37px;
-    padding-top: 37px;
-  }
-  .header__fixedNav-menuLinks nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 21px;
-  }
-  .header__fixedNav-menuLinks nav ul li a.opt {
-    font-size: 17px;
-    font-weight: 600;
-    display: inline-block;
-    position: relative;
-  }
-  .header__fixedNav-menuLinks nav ul li a.opt:after {
-    background: none repeat scroll 0 0 transparent;
-    content: "";
-    display: block;
-    height: 1.5px;
-    left: 50%;
-    position: absolute;
-    background: #000;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  .header__fixedNav-menuLinks nav ul li a.opt:hover:after {
-    width: 100%;
-    height: 2px;
-    left: 0;
-  }
-  a.active {
-    border-bottom: 3px #000 solid;
-  }
-  .header__fixedNav-menuLinks nav ul li a.button {
-    border: 2px solid #000;
-    margin-left: -3px;
-    padding: 9px 25px 9px 25px;
-    font-size: 15.7px;
-    font-weight: 600;
-  }
-  .header__fixedNav-menuLinks a.button:hover {
-    text-decoration: none;
-    background-color: #fbc165;
-    transition: ease 0.4s;
-  }
-  /* Content */
-  /* Flickity Fade Slide CSS */
-  .carousel {
-    margin: 20px 0;
-    position: relative;
-  }
-  .carousel-cell {
-    width: 100%;
-    height: 100%;
-    margin-right: 10px;
-    /* center images in cells with flexbox */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-  .carousel.is-fullscreen .carousel-cell {
-    height: 100%;
-  }
-  .carousel-cell-image {
-    display: block;
-    max-width: 100%;
-    width: 100vw;
-  }
-  /* fa-play fa-pause */
-  #playPauseButton,
-  #playIcon,
-  #pauseIcon,
-  #playPauseButton:focus,
-  #playIcon:focus,
-  #pauseIcon:focus {
-    border: none;
-    outline: none;
-    position: absolute;
-    top: 72.3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    background: transparent;
-  }
-  .fa-play:before {
-    content: "";
-    display: block;
-    background-image: url(/img/icons/fa-play.png) !important;
-    background-size: contain;
-    width: 19px;
-    height: 21px;
-    background-repeat: no-repeat;
-    transform: none;
-    color: transparent;
-    background-color: transparent;
-  }
-  .fa-pause:before {
-    content: "";
-    display: block;
-    background-image: url(/img/icons/fa-pause.png) !important;
-    background-size: contain;
-    width: 19px;
-    height: 21px;
-    background-repeat: no-repeat;
-    transform: none;
-    color: transparent;
-    background-color: transparent;
-  }
-  a.arrow-info {
-    position: absolute;
-    top: 89.7%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    font-size: 44px;
-  }
-  a.arrow-info i {
-    color: #fff !important;
-  }
-  /* infoOurStory */
-  
-  
-  
-  /* Footer */
-  div.footer__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin: 10px 0;
-  }
-  div.footer__logo img {
-    width: 100%;
-    height: auto;
-    max-width: 26px;
-    max-height: 50px;
-  }
-  .footer__navigations {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 30px 0 7px 0;
-  }
-  .footer__social-links {
-    margin-left: -37px;
-  }
-  .footer__social-links ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .footer__social-links ul li {
-    margin: 4px 8px 0 0px;
-  }
-  .footer__social-links ul li a {
-    display: flex;
-    padding: 5px 7px;
-    border-radius: 50%;
-    background-color: #1c2c59;
-  }
-  .footer__social-links i.fa-brands {
-    font-size: 15px;
-    padding: 0 1px;
-    color: white;
-  }
-  .footer__menu-navs {
-    margin-right: 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    font-family: "Cabin";
-  }
-  .footer__menu-navs ul {
-    margin-right: -10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .footer__menu-navs ul li {
-    margin: 4.7px;
-    padding: 4px;
-  }
-  .footer__menu-navs ul li a.opt {
-    font-size: 15.9px;
-    font-weight: 700;
-    display: inline-block;
-    position: relative;
-  }
-  .footer__menu-navs ul li a.opt:after {
-    background: none repeat scroll 0 0 transparent;
-    content: "";
-    display: block;
-    height: 1.5px;
-    left: 50%;
-    position: absolute;
-    background: #000;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  .footer__menu-navs ul li a.opt:hover:after {
-    width: 100%;
-    height: 3px;
-    left: 0;
-  }
-  .footer__menu-navs ul li a.button {
-    border: 2px solid #000;
-    padding: 6px 25px;
-    font-size: 15px;
-    font-weight: 700;
-  }
-  .footer__menu-navs a.button:hover {
-    text-decoration: none;
-    background-color: #fcba4f;
-    transition: ease 0.4s;
-  }
-  
+}
+.header__fixedNav-menuLinks-active nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+.header__fixedNav-menuLinks-active nav ul li a.opt {
+  font-size: 17px;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+}
+.header__fixedNav-menuLinks-active nav ul li a.opt:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 1.5px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.header__fixedNav-menuLinks-active nav ul li a.opt:hover:after {
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+.header__fixedNav-menuLinks-active nav ul li a.active {
+  border-bottom: 3px #000 solid;
+}
+.header__fixedNav-menuLinks-active nav ul li a.button {
+  border: 2px solid #000;
+  margin-left: -3px;
+  padding: 9px 25px 9px 25px;
+  font-size: 15.7px;
+  font-weight: 600;
+}
+.header__fixedNav-menuLinks-active a.button:hover {
+  text-decoration: none;
+  background-color: #fbc165;
+  transition: ease 0.4s;
+}
+.header__fixedNav-logo img#logo.active {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 221px;
+}
+.header__fixedNav-logo img#logo-fixedNav.active {
+  display: block;
+  width: 100%;
+  height: 42%;
+  margin-left: 99px;
+  margin-top: 60px;
+  max-width: 92px;
+}
+/* No fixed navbar */
+.header__fixedNav-logo {
+  width: 25%;
+  height: auto;
+  margin-top: 9px;
+}
+.header__fixedNav-logo img {
+  display: none;
+  width: 100%;
+  height: auto;
+  max-width: 221px;
+}
+.header__fixedNav-menuLinks {
+  margin-left: -37px;
+  padding-top: 37px;
+}
+.header__fixedNav-menuLinks nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+.header__fixedNav-menuLinks nav ul li a.opt {
+  font-size: 17px;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+}
+.header__fixedNav-menuLinks nav ul li a.opt:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 1.5px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.header__fixedNav-menuLinks nav ul li a.opt:hover:after {
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+a.active {
+  border-bottom: 3px #000 solid;
+}
+.header__fixedNav-menuLinks nav ul li a.button {
+  border: 2px solid #000;
+  margin-left: -3px;
+  padding: 9px 25px 9px 25px;
+  font-size: 15.7px;
+  font-weight: 600;
+}
+.header__fixedNav-menuLinks a.button:hover {
+  text-decoration: none;
+  background-color: #fbc165;
+  transition: ease 0.4s;
+}
+/* Content */
+/* Flickity Fade Slide CSS */
+.carousel {
+  margin: 20px 0;
+  position: relative;
+}
+.carousel-cell {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  /* center images in cells with flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+.carousel-cell-image {
+  display: block;
+  max-width: 100%;
+  width: 100vw;
+}
+/* fa-play fa-pause */
+#playPauseButton,
+#playIcon,
+#pauseIcon,
+#playPauseButton:focus,
+#playIcon:focus,
+#pauseIcon:focus {
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 72.3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background: transparent;
+}
+.fa-play:before {
+  content: "";
+  display: block;
+  background-image: url(/img/icons/fa-play.png) !important;
+  background-size: contain;
+  width: 19px;
+  height: 21px;
+  background-repeat: no-repeat;
+  transform: none;
+  color: transparent;
+  background-color: transparent;
+}
+.fa-pause:before {
+  content: "";
+  display: block;
+  background-image: url(/img/icons/fa-pause.png) !important;
+  background-size: contain;
+  width: 19px;
+  height: 21px;
+  background-repeat: no-repeat;
+  transform: none;
+  color: transparent;
+  background-color: transparent;
+}
+a.arrow-info {
+  position: absolute;
+  top: 89.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 44px;
+}
+a.arrow-info i {
+  color: #fff !important;
+}
+/* infoOurStory */
+
+/* Footer */
+div.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+div.footer__logo img {
+  width: 100%;
+  height: auto;
+  max-width: 26px;
+  max-height: 50px;
+}
+.footer__navigations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 30px 0 7px 0;
+}
+.footer__social-links {
+  margin-left: -37px;
+}
+.footer__social-links ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer__social-links ul li {
+  margin: 4px 8px 0 0px;
+}
+.footer__social-links ul li a {
+  display: flex;
+  padding: 5px 7px;
+  border-radius: 50%;
+  background-color: #1c2c59;
+}
+.footer__social-links i.fa-brands {
+  font-size: 15px;
+  padding: 0 1px;
+  color: white;
+}
+.footer__menu-navs {
+  margin-right: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-family: "Cabin";
+}
+.footer__menu-navs ul {
+  margin-right: -10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer__menu-navs ul li {
+  margin: 4.7px;
+  padding: 4px;
+}
+.footer__menu-navs ul li a.opt {
+  font-size: 15.9px;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+}
+.footer__menu-navs ul li a.opt:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 1.5px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.footer__menu-navs ul li a.opt:hover:after {
+  width: 100%;
+  height: 3px;
+  left: 0;
+}
+.footer__menu-navs ul li a.button {
+  border: 2px solid #000;
+  padding: 6px 25px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.footer__menu-navs a.button:hover {
+  text-decoration: none;
+  background-color: #fcba4f;
+  transition: ease 0.4s;
+}
