@@ -57,6 +57,7 @@
   .header__fixedNav {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
   }
   /* When scroll, add these classes to create fixed navbar */
   .header__fixedNav-active {
@@ -77,8 +78,6 @@
   .header__fixedNav-menuLinks-active {
     margin-left: 15px;
     padding: 86px 0 20px 0;
-    /* padding-top: 86px;
-    padding-bottom: 20px; */
   }
   .header__fixedNav-menuLinks-active nav ul {
     display: flex;
