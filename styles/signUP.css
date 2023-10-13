@@ -231,14 +231,6 @@ section.infoHl p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-/* <<<<<<< Updated upstream
-  div.form-ui {
-    display: block;
-  }
-  
-   */
-  
-=======
   div.content {
   display: flex;
   flex-direction: column;
@@ -252,6 +244,7 @@ section.infoHl p {
   margin-bottom: 5rem;
   }
   div.form-ui{
+    display: block;
     padding-top: 0;
     margin-bottom: 2rem;
     width: 100%;
@@ -307,7 +300,6 @@ section.infoHl p {
   font-weight: bold;
   margin: 1rem 0.9375rem;
    }
->>>>>>> Stashed changes
   /* Footer */
   div.footer__logo {
     display: flex;

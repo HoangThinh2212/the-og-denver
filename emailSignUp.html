@@ -114,35 +114,43 @@
           <p>Send us a message and we’ll get back to you as soon as possible. Looking forward to hearing from you.</p>
         </section>
         
-          <!-- <div class="form-ui">
-            <label for="name">
-                <i class="error-label"></i>
-            <span class="input-label">Name</span><span class="input-label-required">- Required</span>
-            <input type="text" id="name" class="form-control" required>
+        <div class="content">
+          <div class="form-ui">
+           <label for="name">
+               <i class="error-label"></i>
+               <span class="input-label">Name<span class="input-label-required">- Required</span></span>
+               <input type="text" id="name" class="form-control" placeholder="Name" required>
+           </label>
+           <label for="email">
+               <i class="error-label"></i>
+               <span class="input-label">Email<span class="input-label-required">- Required</span></span>
+               <input type="email" id="email" class="form-control" placeholder="Email" required>
             </label>
-            <label for="email">
-                <i class="error-label"></i>
-            <span class="input-label">Email</span><span input-label-required>- Required</span>
-            <input type="email" id="email" class="form-control" placeholder="Email" required>
-        </label>
-            <label for="number">
-                <i class="error-label"></i>
-            <span class="input-label">Phone Number</span><span input-label-required>- Required</span>
-            <input type="number" id="pnumber" class="form-control" placeholder="Phone Number" required data-input-validator="phone">
-        </label>
-            <label for="reason">
-                <i class="error-label"></i>
-            <span class="input-label">What are you getting in touch about?</span><span input-label-required>- Optional</span>
-            <input type="text" id="reason" class="form-control" placeholder="What are you getting in touch about?" required>
-        </label>
-            <label for="comment-form">
-                <i class="error-label"></i>
-            <span class="input-label">Your Message</span><span input-label-required>- Required</span>
-            <textarea type="text" id="comment-form" class="form-control" placeholder="Your Message" required></textarea>
-        </label>
-          </div>  -->
-       
-          <p>juuggh</p>
+           <label for="number">
+               <i class="error-label"></i>
+               <span class="input-label">Phone Number<span class="input-label-required">- Required</span></span>
+               <input type="number" id="pnumber" class="form-control" placeholder="Phone Number" required data-input-validator="phone">
+           </label>
+           <label role="presentation" class="input-populated">
+                <span class="input-label">What are you getting in touch about?<span class="input-label-required">- Optional</span></span>
+                <div class="form-group">
+                  <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                   <option value selected disabled>What are you getting in touch about?</option>
+                   <option value="General Inquiry">General Inquiry</option>
+                   <option value="Press Inquiry">Press Inquiry</option>
+                 </select>
+                </div>
+           </label>
+           <label for="comment-form">
+               <i class="error-label"></i>
+               <span class="input-label">Your Message<span class="input-label-required">- Required</span></span>
+               <textarea type="text" id="comment-form" class="form-control" placeholder="Your Message" rows="6" cols="50" required></textarea>
+           </label>
+         </div> 
+          <div class="form-button">
+           <button type="submit" class="btn btn-brand">Send</button>
+          </div> 
+       </div>
 
       <!-- Footer -->
       <footer>
