@@ -231,12 +231,83 @@ section.infoHl p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+/* <<<<<<< Updated upstream
   div.form-ui {
     display: block;
   }
   
+   */
   
+=======
+  div.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.9375rem;
+  padding-right: 1.9375rem;
+  margin-bottom: 5rem;
+  }
+  div.form-ui{
+    padding-top: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  div.form-ui label{
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .form-ui .input-label {
+    top: -1rem;
+    padding-left: 3px;
+    font-size: 0.8rem;
+    color: #1C2C59;
+    margin: -1px;
+    font-weight: bold;
+    opacity: 1;
+ }
+  .form-ui .input-label-required {
+  color: #b6b6b6;
+  font-style: italic;
+ }
+  .form-select{
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #3e3c3c;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  }
+  .form-ui .form-control{
+    transition: all 0.2s linear 0s;
+    border-color: rgba(221,221,221,0.6);
+    border-radius: 0;
+    padding: 0.75rem 0.75rem;
+  }
+  /* BUTTON */
   
+    .form-button .btn {
+  border-radius: 0;
+  padding: 0.5rem 1.5rem 0.6rem 1.5rem;
+  text-transform:uppercase ;
+  letter-spacing: 1px;
+  font-size: .9rem;
+  border-width: 2px;
+  font-family: "bilo";
+  color: #1C2C59;
+  border-color: #1C2C59;
+  font-weight: bold;
+  margin: 1rem 0.9375rem;
+   }
+>>>>>>> Stashed changes
   /* Footer */
   div.footer__logo {
     display: flex;
