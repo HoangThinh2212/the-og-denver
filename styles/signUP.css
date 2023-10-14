@@ -295,6 +295,13 @@ section.infoHL h1 {
     border: 1px solid #ddd;
     border-radius: 0;
   }
+  .form-ui .form-control:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #FCBA4F;
+    border-color:#fff;
+    border-radius: 2px;
+    border-width: thick;
+  }
   textarea {
     padding-top: 1rem;
     min-width: 100%;
