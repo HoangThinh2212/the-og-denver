@@ -137,9 +137,6 @@ a {
   max-width: 92px;
 }
 /* No fixed navbar */
-.header__fixedNav-logo {
-  /* tạm thời chưa có đang làm  */
-}
 .header__fixedNav-logo img {
   display: none;
   width: 100%;
@@ -185,10 +182,10 @@ a.active {
 }
 .header__fixedNav-menuLinks nav ul li a.button {
   border: 2px solid #000;
-  margin-right: -5px;
+  margin-right: -6px;
   padding: 8px 23px 11px 21px;
-  font-size: 15.8px;
-  letter-spacing: 1px;
+  font-size: 15.3px;
+  letter-spacing: 1.1px;
   font-weight: 600;
 }
 .header__fixedNav-menuLinks a.button:hover {
@@ -279,12 +276,34 @@ section.logoAndCategory {
   display: flex;
   flex-flow: nowrap column;
   align-items: center;
+  padding-top: 116px;
+  position: relative;
 }
 section.logoAndCategory div.mainLogo {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
+}
+div.mainLogo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 526px;
+  object-fit: cover;
+}
+section.logoAndCategory div.subLogo {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 15px;
+  left: 1057px;
+}
+div.subLogo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: contain;
 }
 
 /* Footer */
