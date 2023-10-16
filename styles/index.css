@@ -307,7 +307,7 @@ div.subLogo > img {
   object-fit: contain;
 }
 div.subCategory {
-  margin: 9px 0 0 -12px;
+  margin: 7px 0 0 16px;
 }
 div.subCategory__content {
   display: flex;
@@ -324,10 +324,11 @@ div.subCategory__content h3 {
 div.subCategory__content h3.classics {
   color: #f5f3ec;
   -webkit-text-stroke: 0.5px #1c2d58;
+  margin: 0 4px;
+  padding: 0px 7px;
 }
 div.subCategory__content h3.comfort {
-}
-div.subCategory__content h3.curiosities {
+  padding-right: 9px;
 }
 div.subCategory__content img.diamond {
   width: 28px;
