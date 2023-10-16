@@ -307,7 +307,7 @@ div.subLogo > img {
   object-fit: contain;
 }
 div.subCategory {
-  margin: 9px 0px 0px 18px;
+  margin: 9px 0px 0px 10px;
 }
 div.subCategory__content {
   display: flex;
