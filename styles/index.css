@@ -327,10 +327,14 @@ div.subCategory__content h3.classics {
   -webkit-text-stroke: 0.5px #1c2d58;
   padding: 0 13px;
 }
+div.subCategory__content h3.comfort {
+  padding-right: 13px;
+}
 div.subCategory__content img.diamond {
   width: 28px;
   height: 17px;
 }
+
 
 /* Footer */
 div.footer__logo {
