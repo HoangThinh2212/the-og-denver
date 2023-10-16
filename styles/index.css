@@ -306,21 +306,30 @@ div.subLogo > img {
   max-height: 120px;
   object-fit: contain;
 }
+div.subCategory {
+  margin: 9px 0px 0px 18px;
+}
 div.subCategory__content {
   display: flex;
   flex-flow: nowrap row;
+  gap: 80px;
 }
 div.subCategory__content h3 {
-  text-transform: uppercase;
   font-family: "bicyclette";
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 25px;
+  font-size: 26.4px;
+  margin: 0px -2px;
 }
 div.subCategory__content h3.classics {
   color: #f5f3ec;
   -webkit-text-stroke: 0.5px #1c2d58;
+  padding: 0 13px;
+}
+div.subCategory__content img.diamond {
+  width: 28px;
+  height: 17px;
 }
 
 /* Footer */
