@@ -1,6 +1,5 @@
 * {
   scroll-behavior: smooth;
-  box-sizing: border-box;
   color: #1c2c59;
 }
 ul {
@@ -16,7 +15,6 @@ a {
   position: relative;
   background-color: #f5f3ec;
   padding: 60px 100px 44px 100px !important;
-  /* font-family: "Martel Sans", sans-serif; */
   font-family: "bilo";
 }
 /* Border for Website  */
@@ -194,7 +192,7 @@ a.active {
   transition: ease 0.4s;
 }
 /* Content */
-/* info HomePage */
+/* logoAndCategory */
 section.logoAndCategory {
   width: 100%;
   height: 100%;
@@ -203,7 +201,6 @@ section.logoAndCategory {
   align-items: center;
   padding-top: 116px;
   padding-bottom: 250px;
-  position: relative;
 }
 section.logoAndCategory div.mainLogo {
   width: 100%;
@@ -211,6 +208,7 @@ section.logoAndCategory div.mainLogo {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  position: relative;
 }
 div.mainLogo > img {
   width: 100%;
@@ -223,7 +221,7 @@ section.logoAndCategory div.subLogo {
   height: auto;
   position: absolute;
   top: 15px;
-  left: 1057px;
+  right: auto;
 }
 div.subLogo > img {
   width: 100%;
@@ -283,8 +281,37 @@ a.arrow-info {
 .pulse-element {
   animation: pulse-up-down 1s infinite;
 }
-
+/* infoHP */
 section.infoHP {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+div.ourMenusArea {
+  width: 100%;
+  height: auto;
+}
+div.ourMenusArea div.ourMenuImg {
+  width: 50%;
+  height: auto;
+}
+div.ourMenusArea div.ourMenuContent {
+  width: 50%;
+  height: auto;
+}
+div.ourMenusArea div.ourMenuImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+div.ourMenusArea div.ourMenuContent img {
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: cover;
 }
 /* Footer */
 div.footer__logo {
