@@ -1,6 +1,5 @@
 * {
   scroll-behavior: smooth;
-  box-sizing: border-box;
   color: #1c2c59;
 }
 ul {
@@ -15,8 +14,7 @@ a {
   flex-flow: nowrap column;
   position: relative;
   background-color: #f5f3ec;
-  padding: 60px 100px 44px 100px !important;
-  /* font-family: "Martel Sans", sans-serif; */
+  padding: 60px 102px 44px 102px !important;
   font-family: "bilo";
 }
 /* Border for Website  */

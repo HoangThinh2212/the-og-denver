@@ -14,7 +14,7 @@ a {
   flex-flow: nowrap column;
   position: relative;
   background-color: #f5f3ec;
-  padding: 60px 100px 44px 100px !important;
+  padding: 60px 102px 44px 102px !important;
   font-family: "bilo";
   line-height: 1.5;
 }
@@ -422,18 +422,19 @@ div.happeningsArea {
   display: flex;
   flex-flow: row nowrap;
   gap: 17px;
-  margin-bottom: 85px;
+  margin-bottom: 52px;
 }
 div.happeningsArea div.happeningContent {
-  width: 50%;
+  width: 48.5%;
   height: 65vh;
   border-width: 30px;
   border-style: solid;
   border-image: url(../img/icons/border_content.png);
   border-image-slice: 190;
   border-image-repeat: stretch;
-  padding: 85px 80px;
   text-align: left;
+  padding: 99px 80px;
+  margin-left: 19px;
 }
 div.happeningsArea div.happeningContent h2.titleContent {
   position: relative;
@@ -449,11 +450,11 @@ div.happeningsArea div.happeningContent h2::after {
   content: "";
   display: block;
   margin: auto;
-  width: 200px;
-  height: 90px;
-  top: -48px;
+  width: 230px;
+  height: 100px;
+  top: -49px;
   position: absolute;
-  right: -108px;
+  right: -157.4px;
   background-image: url(../img/icons/illustration_2.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -477,7 +478,7 @@ div.happeningsArea div.happeningContent a.button:hover {
 }
 
 div.happeningsArea div.happeningImg {
-  width: 50%;
+  width: 52%;
   height: 65vh;
 }
 div.happeningsArea div.happeningImg img {
