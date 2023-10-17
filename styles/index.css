@@ -264,15 +264,28 @@ div.subCategory__content img.diamond {
 a.arrow-info {
   position: absolute;
   bottom: 74px;
-  /* transform: translateY(-50%); */
   z-index: 10;
   font-size: 44px;
-  /* width: 54px;
-  height: 44px; */
 }
-/* a.arrow-info i {
-} */
+/* Animation for arrow-info */
+@keyframes pulse-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
+.pulse-element {
+  animation: pulse-up-down 1s infinite;
+}
+
+section.infoHP {
+}
 /* Footer */
 div.footer__logo {
   display: flex;
@@ -367,20 +380,4 @@ div.footer__logo img {
   text-decoration: none;
   background-color: #fcba4f;
   transition: ease 0.4s;
-}
-
-@keyframes pulse-up-down {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.pulse-element {
-  animation: pulse-up-down 1s infinite;
 }
