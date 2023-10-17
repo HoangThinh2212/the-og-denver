@@ -216,14 +216,10 @@ div.mainLogo > img {
   max-width: 526px;
   object-fit: cover;
 }
-section.logoAndCategory div.subLogo {
-  width: 100%;
-  height: auto;
+section.logoAndCategory div.mainLogo img.subLogo {
   position: absolute;
-  top: 15px;
-  right: auto;
-}
-div.subLogo > img {
+  top: -101.5px;
+  right: 83.5px;
   width: 100%;
   height: 100%;
   max-width: 120px;
