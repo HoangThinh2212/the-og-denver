@@ -266,6 +266,10 @@ a.arrow-info {
   animation: float 1s ease-in-out infinite;
   transition: 1s ease all;
 }
+span#infoHP {
+  position: absolute;
+  top: 14.4%;
+}
 /* Animation for arrow-info */
 @keyframes float {
   0% {
