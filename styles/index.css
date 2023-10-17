@@ -64,7 +64,7 @@ a {
   flex-wrap: nowrap;
   /* Create fixed */
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #f5f3ec;
   transition: 0.1s;
   position: fixed;
   width: 100%;
@@ -74,8 +74,8 @@ a {
   z-index: 30;
 }
 .header__fixedNav-menuLinks-active {
-  margin-left: 15px;
-  padding: 86px 0 20px 0;
+  margin-left: 188px;
+  padding: 83px 0 26px 0;
 }
 .header__fixedNav-menuLinks-active nav ul {
   display: flex;
@@ -85,7 +85,7 @@ a {
   letter-spacing: 1px;
 }
 .header__fixedNav-menuLinks-active nav ul li a.opt {
-  font-size: 17px;
+  font-size: 15.2px;
   font-weight: 600;
   display: inline-block;
   position: relative;
@@ -112,8 +112,8 @@ a {
 .header__fixedNav-menuLinks-active nav ul li a.button {
   border: 2px solid #000;
   margin-left: -3px;
-  padding: 9px 25px 9px 25px;
-  font-size: 15.7px;
+  padding: 10px 22px 10px 22px;
+  font-size: 15.2px;
   font-weight: 600;
 }
 .header__fixedNav-menuLinks-active a.button:hover {
@@ -132,8 +132,9 @@ a {
   width: 100%;
   height: 42%;
   margin-left: 99px;
-  margin-top: 60px;
-  max-width: 92px;
+  margin-top: 67px;
+  max-width: 90px;
+  max-height: 60px;
 }
 /* No fixed navbar */
 .header__fixedNav-logo img {
@@ -258,25 +259,26 @@ div.subCategory__content img.diamond {
 }
 a.arrow-info {
   position: absolute;
-  bottom: 74px;
+  bottom: 113px;
+  right: 47%;
   z-index: 10;
-  font-size: 44px;
+  font-size: 40.5px;
+  animation: float 1s ease-in-out infinite;
+  transition: 1s ease all;
 }
 /* Animation for arrow-info */
-@keyframes pulse-up-down {
+@keyframes float {
   0% {
-    transform: translateY(0);
+    transform: translatey(0px) translateX(-50%);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translatey(-10px) translateX(-50%);
   }
   100% {
-    transform: translateY(0);
+    transform: translatey(0px) translateX(-50%);
   }
 }
-.pulse-element {
-  animation: pulse-up-down 1s infinite;
-}
+
 /* infoHP */
 section.infoHP {
   width: 100%;
@@ -351,6 +353,21 @@ div.ourMenusArea div.ourMenuContent a.button:hover {
   background-color: #fcba4f;
   transition: ease 0.4s;
 }
+div.introHP {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+div.introHP div.optionCards {
+  width: 100%;
+  height: 100%;
+}
+div.introHP div.introContent {
+  width: 100%;
+  height: 100%;
+}
+
 /* Footer */
 div.footer__logo {
   display: flex;
