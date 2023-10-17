@@ -409,6 +409,19 @@ div.introHP div.introContent {
   height: 100%;
 }
 
+
+
+
+div.imageHP {
+  width: 100%;
+  height: 65vh;
+}
+div.imageHP img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Footer */
 div.footer__logo {
   display: flex;
