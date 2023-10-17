@@ -296,6 +296,7 @@ div.ourMenusArea {
   display: flex;
   flex-flow: row nowrap;
   gap: 17px;
+  margin-bottom: 90px;
 }
 div.ourMenusArea div.ourMenuImg {
   width: 50%;
