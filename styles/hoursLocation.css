@@ -185,6 +185,11 @@ a {
   left: 0;
 }
 a.active {
+  font-size: 15.2px;
+  font-weight: 600;
+  display: inline-block;
+  height: 27.5px;
+  position: relative;
   border-bottom: 3px #000 solid;
 }
 .header__fixedNav-menuLinks nav ul li a.button {
