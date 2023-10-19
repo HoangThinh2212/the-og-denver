@@ -109,9 +109,9 @@ a {
   left: 0;
   top: 25px;
 }
-.header__fixedNav-menuLinks-active nav ul li a.active {
+/* .header__fixedNav-menuLinks-active nav ul li a.active {
   border-bottom: 3px #000 solid;
-}
+} */
 .header__fixedNav-menuLinks-active nav ul li a.button {
   border: 2px solid #000;
   margin-left: 1px;
@@ -193,7 +193,7 @@ a {
   left: 0;
   top: 25px;
 }
-a.active {
+.header__fixedNav-menuLinks-active nav ul li a.active {
   font-size: 15.2px;
   font-weight: 600;
   display: inline-block;
@@ -290,6 +290,28 @@ a.arrow-info i {
   color: #fff !important;
 }
 /* infoMenu */
+ul.nav-tabs li.nav-item a.nav-link.active {
+  background-color: #FCBA4F ;
+}
+
+
+
+/* Brunch */
+
+
+
+
+
+
+
+
+/* Libations */
+
+
+
+
+
+
 
 
 /* Footer */
