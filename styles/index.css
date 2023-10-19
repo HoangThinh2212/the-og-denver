@@ -486,8 +486,6 @@ div.happeningsArea div.happeningImg img {
   height: 100%;
   object-fit: cover;
 }
-
-/* End of HappeningArea */
 div.imageHP {
   width: 100%;
   height: 65vh;
@@ -496,6 +494,43 @@ div.imageHP img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+div.followArea {
+  width: 100%;
+  height: 100%;
+  padding: 33px;
+  margin: 53px 0px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+div.followArea h2 {
+  font-family: "bicyclette";
+  color: #1c2c59;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 42.5px;
+  margin-bottom: -2px;
+}
+div.followArea a {
+  text-decoration: underline !important;
+  font-family: "bicyclette";
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 34px;
+  margin-bottom: 23px;
+  color: #f5f3ec !important;
+  -webkit-text-stroke: 0.5px #1c2c59;
+}
+div.followArea a:hover {
+  -webkit-text-stroke: 0;
+  color: rgba(28, 44, 89, 0.7) !important;
+  text-decoration: underline;
+}
+div.followArea img {
+  width: 114px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Footer */
