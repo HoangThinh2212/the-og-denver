@@ -168,6 +168,13 @@ a {
   height: 27.5px;
   position: relative;
 }
+.header__fixedNav-menuLinks nav ul li a.opt:hover {
+  font-size: 15.2px;
+  font-weight: 600;
+  display: inline-block;
+  height: 27.5px;
+  position: relative;
+}
 .header__fixedNav-menuLinks nav ul li a.opt:after {
   background: none repeat scroll 0 0 transparent;
   content: "";
@@ -183,8 +190,14 @@ a {
   width: 100%;
   height: 2.2px;
   left: 0;
+  top: 25px;
 }
 a.active {
+  font-size: 15.2px;
+  font-weight: 600;
+  display: inline-block;
+  height: 27.5px;
+  position: relative;
   border-bottom: 3px #000 solid;
 }
 .header__fixedNav-menuLinks nav ul li a.button {
