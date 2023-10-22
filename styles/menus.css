@@ -308,8 +308,23 @@ h1.titleSlider {
   font-family: "bicyclette";
 }
 /* infoMenu */
-ul.nav-tabs li.nav-item a.nav-link.active {
-  background-color: #fcba4f;
+ul.nav {
+  gap: 10px;
+}
+button.nav-link {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: #1c2c59 !important;
+  color: #1c2c59 !important;
+  border-radius: 0 !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+button.nav-link.active {
+  background-color: #fcba4f !important;
+  border-radius: 0;
+
+  /* border-color: #1c2c59 !important;
+  color: #1c2c59 !important; */
 }
 
 /* Brunch */
