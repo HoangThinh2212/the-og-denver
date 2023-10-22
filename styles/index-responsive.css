@@ -1,20 +1,41 @@
 /* Applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .container {
-      background-color: blue;
-    }
+  .borderOverlay {
+    border-width: 55px;
+    border-image-slice: 181 178;
+    border-image-repeat: repeat;
   }
-  
-  /* Applies to small devices (landscape phones, less than 768px) */
-  @media (max-width: 767.98px) {
-    .container {
-      background-color: orange;
-    }
+
+  div.header__contactInfo a.telInfo {
+    display: none;
   }
-  /* Applies to x-small devices (portrait phones, less than 576px) */
-  @media (max-width: 575.98px) {
-    .container {
-      background-color: yellow;
-    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    background-color: orange;
   }
-  
+}
+/* Applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    background-color: yellow;
+  }
+}
