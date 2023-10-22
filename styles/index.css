@@ -141,7 +141,7 @@ div.menu-btn {
   max-height: 60px;
 }
 /* Menu used for mobile and tablet */
-nav.menuTablet {
+div.menuTablet {
   display: none;
 }
 /* No fixed navbar */

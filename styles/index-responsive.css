@@ -54,10 +54,10 @@
     display: none;
   }
 
-  nav.menuTablet {
+  div.menuTablet {
     display: flex;
   }
-  nav.menuTablet ul.menuTablet {
+  div.menuTablet ul.menuTablet {
     display: flex !important;
     flex-flow: column nowrap;
     gap: 5px;
@@ -70,6 +70,10 @@
     position: relative;
     letter-spacing: 1px;
     font-family: "bilo";
+  }
+  nav.menuTablet {
+    width: 100%;
+    border-bottom: 2px solid #fcba4f;
   }
 }
 
