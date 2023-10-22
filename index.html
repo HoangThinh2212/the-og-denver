@@ -15,7 +15,7 @@
     />
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/common.css" />
-    <link rel="stylesheet" href="/styles/index-responsive.css">
+    <link rel="stylesheet" href="/styles/index-responsive.css" />
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
@@ -49,10 +49,20 @@
       <header>
         <!-- Address and Telephone -->
         <div class="header__contactInfo">
-          <a class="addressInfo" href="https://goo.gl/maps/68KneS8v2rYyehNq5" target="_blank"
+          <a
+            class="addressInfo"
+            href="https://goo.gl/maps/68KneS8v2rYyehNq5"
+            target="_blank"
             >1600 20th St, Denver, CO 80202</a
           >
           <a class="telInfo" href="tel:+720.769.1414">720.769.1414</a>
+        </div>
+
+        <!--Button used for mobile and tablet-->
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
         </div>
         <!-- Menu List -->
         <nav id="navbar" class="header__fixedNav">
@@ -103,6 +113,54 @@
                 <li><a href="#" class="button">RESERVATIONS</a></li>
               </ul>
             </nav>
+
+            <!-- Menu inside button while mobile and tablet -->
+            <nav class="menuTablet">
+              <!-- List Navigations -->
+              <ul class="menuTablet">
+                <li>
+                  <a href="./hoursLocation.html" class="opt"
+                    >HOURS & LOCATION</a
+                  >
+                </li>
+                <li><a href="./menus.html" class="opt">MENUS</a></li>
+                <li>
+                  <a href="./ourStory.html" class="opt">OUR STORY</a>
+                </li>
+                <li>
+                  <a href="./happenings.html" class="opt">HAPPENINGS</a>
+                </li>
+                <li>
+                  <a href="./privateEvent.html" class="opt">PRIVATE EVENTS</a>
+                </li>
+                <li>
+                  <a href="./privateEvent.html" class="opt">ORDER ONLINE</a>
+                </li>
+                <li>
+                  <a href="./privateEvent.html" class="opt"
+                    >JOIN THE OG FAMILY</a
+                  >
+                </li>
+                <li>
+                  <a href="./privateEvent.html" class="opt">GIFT CARDS</a>
+                </li>
+                <li>
+                  <a href="./privateEvent.html" class="opt">PRIVACY POLICY</a>
+                </li>
+                <li>
+                  <a href="./privateEvent.html" class="opt">PRESS</a>
+                </li>
+                <li>
+                  <a href="./privateEvent.html" class="opt">CONTACT</a>
+                </li>
+                <li>
+                  <a href="./privateEvent.html" class="opt">RESERVATIONS</a>
+                </li>
+                <li>
+                  <a href="./privateEvent.html" class="opt_2">EMAIL SIGNUP</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </nav>
       </header>
@@ -149,7 +207,6 @@
           data-aos-offset="50"
         >
           <div class="ourMenusArea">
-
             <div class="ourMenuImg">
               <img src="./img/index_img/pic_1.jpg" alt="pic1" />
             </div>
@@ -166,7 +223,6 @@
               </p>
               <a class="button" href="./menus.html">VIEW MENUS</a>
             </div>
-            
           </div>
 
           <div class="introHP">
@@ -406,6 +462,22 @@
         }
       }
     </script>
+
+    <!-- Button used for mobile and tablet  -->
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      let menuOpen = false;
+      menuBtn.addEventListener("click", () => {
+        if (!menuOpen) {
+          menuBtn.classList.add("open");
+          menuOpen = true;
+        } else {
+          menuBtn.classList.remove("open");
+          menuOpen = false;
+        }
+      });
+    </script>
+
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
