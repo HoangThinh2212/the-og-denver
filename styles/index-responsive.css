@@ -1,5 +1,11 @@
 /* Applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .container-fluid {
+    padding: 50px !important;
+  }
+  header {
+    border-bottom: 2px solid #fcba4f;
+  }
   .borderOverlay {
     border-width: 55px;
     border-image-slice: 173 178;
@@ -9,8 +15,8 @@
   div.header__contactInfo a.telInfo {
     display: none;
   }
-  /*CSS*/
-  div.menu-btn {
+  /* menu icon */
+  span.menu-btn {
     display: block;
     justify-content: center;
     align-items: center;
@@ -23,29 +29,8 @@
     right: 60px;
   }
 
-  div.menu-btn div.btn-line {
-    width: 22px;
-    height: 2.5px;
-    background: #000;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-  }
-
-  /*Animate lines*/
-  .menu-btn.open .btn-line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-btn.open .btn-line:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-
-  .menu-btn.open .btn-line:nth-child(3) {
-    transform: translateY(-5px) rotate(-45deg);
-  }
-
   .header__contactInfo {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   /* Menu in button */
@@ -71,10 +56,7 @@
     letter-spacing: 1px;
     font-family: "bilo";
   }
-  nav.menuTablet {
-    width: 100%;
-    border-bottom: 2px solid #fcba4f;
-  }
+  
 }
 
 /* Applies to small devices (landscape phones, less than 768px) */

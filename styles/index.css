@@ -53,7 +53,7 @@ a {
   cursor: pointer;
 }
 /* Button used for mobile and tablet */
-div.menu-btn {
+span.menu-btn {
   display: none;
 }
 .header__fixedNav {
