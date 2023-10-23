@@ -466,6 +466,8 @@
 
       //  Button used for mobile and tablet
       const menuBtn = document.querySelector(".menu-btn");
+      const navbar = document.getElementById("navbar");
+      const menuTablet = document.getElementById("menuTablet");
       let menuOpen = false;
       menuBtn.addEventListener("click", () => {
         if (!menuOpen) {
@@ -473,14 +475,19 @@
           menuOpen = true;
         } else {
           menuBtn.classList.remove("open");
+          menuTablet.style.height = "0";
+          menuTablet.style.opacity = "0";
+          navbar.style.borderBottom = "none";
           menuOpen = false;
         }
       });
 
       function openNav() {
-        document.getElementById("menuTablet").style.height = "100%";
-        document.getElementById("navbar").style.borderBottom =
-          "2px solid #fcba4f";
+        menuTablet.style.height = "100%";
+        menuTablet.style.opacity = "1";
+        menuTablet.style.transition = " height 0.3s ease, opacity 0.3s ease";
+        navbar.style.transition = "opacity 0.3s ease";
+        navbar.style.borderBottom = "2px solid #fcba4f";
       }
     </script>
 
