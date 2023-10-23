@@ -16,7 +16,7 @@
     display: none;
   }
   /* menu icon */
-  span.menu-btn {
+  div.menu-btn {
     display: block;
     justify-content: center;
     align-items: center;
@@ -28,6 +28,32 @@
     top: 30px;
     right: 60px;
   }
+
+  div.menu-btn div.btn-line {
+    width: 22px;
+    height: 2.5px;
+    background: #000;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /*Animate lines*/
+  .menu-btn.open .btn-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-btn.open .btn-line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-btn.open .btn-line:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+
+  .header__contactInfo {
+    margin-top: 10px;
+  }
+
 
   .header__contactInfo {
     margin-top: 20px;
