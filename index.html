@@ -114,7 +114,7 @@
               <div class="btn-line"></div>
             </div>
             <!-- Menu inside button while mobile and tablet -->
-            <div class="menuTablet">
+            <div class="menuTablet" id="menuTablet">
               <nav class="menuTablet">
                 <!-- List Navigations -->
                 <ul class="menuTablet">
@@ -464,7 +464,7 @@
         }
       }
 
-      //  Button used for mobile and tablet 
+      //  Button used for mobile and tablet
       const menuBtn = document.querySelector(".menu-btn");
       let menuOpen = false;
       menuBtn.addEventListener("click", () => {
@@ -476,6 +476,12 @@
           menuOpen = false;
         }
       });
+
+      function openNav() {
+        document.getElementById("menuTablet").style.height = "100%";
+        document.getElementById("navbar").style.borderBottom =
+          "2px solid #fcba4f";
+      }
     </script>
 
     <!-- AOS JS -->

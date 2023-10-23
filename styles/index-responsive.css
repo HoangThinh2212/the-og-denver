@@ -3,9 +3,6 @@
   .container-fluid {
     padding: 50px !important;
   }
-  header {
-    border-bottom: 2px solid #fcba4f;
-  }
   .borderOverlay {
     border-width: 55px;
     border-image-slice: 173 178;
@@ -62,6 +59,9 @@
 
   div.menuTablet {
     display: flex;
+    height: 0;
+    width: 100%;
+    overflow-y: hidden;
   }
   div.menuTablet ul.menuTablet {
     display: flex !important;
