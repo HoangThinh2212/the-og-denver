@@ -58,13 +58,6 @@
           <a class="telInfo" href="tel:+720.769.1414">720.769.1414</a>
         </div>
 
-        <!--Button used for mobile and tablet-->
-        <div class="menu-btn">
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-          </div>
-          
         <!-- Menu List -->
         <nav id="navbar" class="header__fixedNav">
           <div class="header__fixedNav-logo">
@@ -114,7 +107,12 @@
                 <li><a href="#" class="button">RESERVATIONS</a></li>
               </ul>
             </nav>
-
+            <!--Button used for mobile and tablet-->
+            <div class="menu-btn" onclick="openNav()">
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+            </div>
             <!-- Menu inside button while mobile and tablet -->
             <div class="menuTablet">
               <nav class="menuTablet">
@@ -422,8 +420,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Fixed Navbar -->
     <script>
+      //     Fixed Navbar
       // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
       window.onscroll = function () {
         scrollFunction();
@@ -465,10 +463,8 @@
           document.getElementById("logo-fixedNav").classList.remove("active");
         }
       }
-    </script>
 
-    <!-- Button used for mobile and tablet  -->
-    <script>
+      //  Button used for mobile and tablet 
       const menuBtn = document.querySelector(".menu-btn");
       let menuOpen = false;
       menuBtn.addEventListener("click", () => {

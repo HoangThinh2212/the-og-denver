@@ -47,7 +47,7 @@
   }
 
   .menu-btn.open .btn-line:nth-child(3) {
-    transform: translateY(-5px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-43deg);
   }
 
   .header__contactInfo {
