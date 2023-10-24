@@ -4,11 +4,14 @@
     padding: 50px !important;
   }
   .borderOverlay {
-    border-width: 55px;
-    border-image-slice: 173 178;
+    border-width: 80px;
+    border-image-slice: 186 181;
     border-image-repeat: repeat;
   }
-
+  div.header__contactInfo a {
+    font-size: 16px;
+    margin-top: 22px;
+  }
   div.header__contactInfo a.telInfo {
     display: none;
   }
@@ -22,13 +25,13 @@
     width: 30px;
     height: 20px;
     color: #253059;
-    top: 30px;
-    right: 60px;
+    top: 50px;
+    right: 91px;
   }
 
   div.menu-btn div.btn-line {
-    width: 22px;
-    height: 2.5px;
+    width: 24px;
+    height: 3px;
     background: #000;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
@@ -73,26 +76,33 @@
 
   /* content */
   section.logoAndCategory {
-    padding-top: 330px;
+    padding-top: 410px;
     padding-bottom: 420px;
   }
   div.mainLogo > img {
-    max-width: 360px;
+    max-width: 405px;
+  }
+  section.logoAndCategory div.mainLogo {
+    padding-top: 37px;
+    height: 16vh;
   }
   section.logoAndCategory div.mainLogo img.subLogo {
-    top: -345.5px;
-    right: 0px;
+    top: -422px;
+    right: 33px;
     max-width: 100px;
     max-height: 100px;
   }
   div.subCategory {
-    margin: 0;
+    margin: 8px 0 0 10px;
   }
   div.subCategory__content {
-    gap: 20px;
+    gap: 38px;
   }
   div.subCategory__content h3 {
     font-size: 21px;
+  }
+  div.subCategory__content h3.comfort{
+    padding-right: 4px;
   }
 }
 
