@@ -66,7 +66,9 @@
     text-align: center;
     z-index: 1;
     background-color: #f5f3ec;
-    transition: all 0.3s ease-in;
+  }
+  .hiddenAll {
+    display: none;
   }
 }
 

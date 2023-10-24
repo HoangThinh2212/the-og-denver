@@ -46,7 +46,7 @@
       <!-- Border for Website -->
       <div class="borderOverlay"></div>
       <!-- Header -->
-      <header>
+      <header id="header">
         <!-- Address and Telephone -->
         <div class="header__contactInfo">
           <a
@@ -117,6 +117,7 @@
         data-toggle="collapse"
         href="#menuTablet"
         role="button"
+        data-target="#menuTablet"
         aria-expanded="false"
         aria-controls="menuTablet"
       >
@@ -172,7 +173,7 @@
         <hr />
       </div>
       <!-- Content -->
-      <main>
+      <main id="main">
         <section
           class="logoAndCategory"
           data-aos="fade-up"
@@ -335,7 +336,7 @@
       </main>
 
       <!-- Footer -->
-      <footer>
+      <footer id="footer">
         <div
           class="footer__logo"
           data-aos="fade-up"
@@ -475,18 +476,22 @@
       menuBtn.addEventListener("click", () => {
         if (!menuOpen) {
           menuBtn.classList.add("open");
+          document.getElementById("header").classList.add("hiddenAll");
+          document.getElementById("main").classList.add("hiddenAll");
+          document.getElementById("footer").classList.add("hiddenAll");
 
           menuOpen = true;
         } else {
           menuBtn.classList.remove("open");
-
+          document.getElementById("header").classList.remove("hiddenAll");
+          document.getElementById("main").classList.remove("hiddenAll");
+          document.getElementById("footer").classList.remove("hiddenAll");
           menuOpen = false;
         }
       });
 
       function openNav() {
-        navbar.style.transition = "opacity 0.3s ease";
-        navbar.style.borderBottom = "2px solid #fcba4f";
+        // document.getElementsByTagName("header").classList.add("hiddenAll");
       }
     </script>
 
