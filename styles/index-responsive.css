@@ -56,32 +56,17 @@
   .header__fixedNav-menuLinks-active {
     display: none;
   }
-
   div.menuTablet {
-    display: flex;
-    position: relative;
-    padding-top: 40px;
-    top: -82px;
-    height: 0;
-    width: 100%;
-    overflow: hidden;
-    opacity: 0;
-    transition: height 0.3s ease, opacity 0.3s ease;
-  }
-  
-  div.menuTablet ul.menuTablet {
-    display: flex !important;
-    flex-flow: column nowrap;
-    gap: 5px;
-    align-items: center;
-  }
-  .header__fixedNav-menuLinks nav ul li a.opt_2 {
-    font-size: 15px;
-    font-weight: 700;
-    display: inline-block;
-    position: relative;
-    letter-spacing: 1px;
-    font-family: "bilo";
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 70px;
+    left: 0%;
+    text-align: center;
+    z-index: 1;
+    background-color: #f5f3ec;
+    transition: all 0.3s ease-in;
   }
 }
 
