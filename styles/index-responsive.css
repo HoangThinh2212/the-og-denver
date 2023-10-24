@@ -162,9 +162,20 @@
   }
   div.happeningsArea div.happeningContent {
     width: 45.5%;
+    padding: 82px 32px 76px 28px;
+  }
+  div.happeningsArea div.happeningContent h2.titleContent {
+    margin-top: 7px;
+    font-size: 36.4px ;
   }
   div.happeningsArea div.happeningImg {
     width: 55.5%;
+  }
+  div.happeningsArea div.happeningContent h2::after {
+    width: 250px;
+    height: 80px;
+    top: -90px;
+    right: -148px;
   }
 }
 
