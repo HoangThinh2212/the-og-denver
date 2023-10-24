@@ -142,6 +142,20 @@
     margin-top: 52px;
     margin-bottom: 17px;
   }
+  div.introHP div.optionCards {
+    gap: 0px;
+    margin-left: 4.5px;
+  }
+  div.introHP div.optionCards div.cardItem {
+    width: 28.9%;
+    padding: 23px 13px;
+    margin: 11px 4px 11px -30px;
+  }
+  div.introHP div.introContent {
+    padding: 0px 25px;
+    margin: 59.5px 0;
+    letter-spacing: 0.1px;
+  }
 }
 
 /* Applies to small devices (landscape phones, less than 768px) */
