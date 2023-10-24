@@ -156,6 +156,13 @@
     margin: 59.5px 0;
     letter-spacing: 0.1px;
   }
+  div.happeningsArea div.happeningContent,
+  div.happeningsArea div.happeningImg {
+    height: 36vh;
+  }
+  div.happeningsArea div.happeningImg img {
+
+  }
 }
 
 /* Applies to small devices (landscape phones, less than 768px) */
