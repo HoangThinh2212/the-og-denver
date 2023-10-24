@@ -109,15 +109,14 @@
     right: 45.15%;
   }
   span#infoHP {
-    top: 22.8%;
+    top: 27.3%;
   }
   div.ourMenusArea {
     margin-top: -43px;
-    /* margin-bottom: 85px; */
   }
   div.ourMenusArea div.ourMenuImg,
   div.ourMenusArea div.ourMenuContent {
-    height: 47vh;
+    height: 47.1vh;
   }
   div.ourMenusArea div.ourMenuContent {
     padding: 69px 28px 50px 30px;
@@ -186,7 +185,15 @@
   }
   div.followArea a {
     font-size: 30px;
-
+  }
+  .footer__navigations {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__menu-navs ul {
+    margin-right: 0;
+    justify-content: center;
   }
 }
 
