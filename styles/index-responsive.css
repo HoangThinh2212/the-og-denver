@@ -70,6 +70,30 @@
   .hiddenAll {
     display: none;
   }
+
+  /* content */
+  section.logoAndCategory {
+    padding-top: 330px;
+    padding-bottom: 420px;
+  }
+  div.mainLogo > img {
+    max-width: 360px;
+  }
+  section.logoAndCategory div.mainLogo img.subLogo {
+    top: -345.5px;
+    right: 0px;
+    max-width: 100px;
+    max-height: 100px;
+  }
+  div.subCategory {
+    margin: 0;
+  }
+  div.subCategory__content {
+    gap: 20px;
+  }
+  div.subCategory__content h3 {
+    font-size: 21px;
+  }
 }
 
 /* Applies to small devices (landscape phones, less than 768px) */
