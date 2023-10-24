@@ -34,7 +34,7 @@
     height: 3px;
     background: #000;
     margin: 5px auto;
-    transition: all 0.3s ease-in-out;
+    transition-timing-function: ease-out;
   }
 
   /*Animate lines*/
@@ -166,7 +166,7 @@
   }
   div.happeningsArea div.happeningContent h2.titleContent {
     margin-top: 7px;
-    font-size: 36.4px ;
+    font-size: 36.4px;
   }
   div.happeningsArea div.happeningImg {
     width: 55.5%;
@@ -176,6 +176,17 @@
     height: 80px;
     top: -90px;
     right: -148px;
+  }
+  div.followArea {
+    min-height: 18vh;
+    max-height: 69vh;
+  }
+  div.followArea h2 {
+    font-size: 36px;
+  }
+  div.followArea a {
+    font-size: 30px;
+
   }
 }
 
