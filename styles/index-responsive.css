@@ -160,8 +160,11 @@
   div.happeningsArea div.happeningImg {
     height: 36vh;
   }
-  div.happeningsArea div.happeningImg img {
-
+  div.happeningsArea div.happeningContent {
+    width: 45.5%;
+  }
+  div.happeningsArea div.happeningImg {
+    width: 55.5%;
   }
 }
 
