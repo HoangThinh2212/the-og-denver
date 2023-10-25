@@ -134,7 +134,7 @@ a {
   max-width: 221px;
 }
 .header__fixedNav-logo img#logo-fixedNav.active {
-  display: none;
+  display: block;
   width: 100%;
   height: 42%;
   margin-left: 99px;
@@ -254,69 +254,7 @@ dialog{
   text-align: center;
   width: 100%;
 }
-/* Button used for mobile and tablet */
-div.menu-btn {
-  display: none;
-}
-/* menu icon */
-div.menu-btn {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  cursor: pointer;
-  width: 30px;
-  height: 20px;
-  color: #253059;
-  top: 50px;
-  right: 91px;
-}
 
-div.menu-btn div.btn-line {
-  width: 24px;
-  height: 3px;
-  background: #000;
-  margin: 5px auto;
-  transition-timing-function: ease-out;
-}
-
-/*Animate lines*/
-.menu-btn.open .btn-line:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-btn.open .btn-line:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
-}
-
-.menu-btn.open .btn-line:nth-child(3) {
-  transform: translateY(-6px) rotate(-43deg);
-}
-
-.header__contactInfo {
-  margin-top: 20px;
-}
-
-/* Menu in button */
-div.header__fixedNav-menuLinks > nav > ul,
-.header__fixedNav-menuLinks-active {
-  display: none;
-}
-div.menuTablet {
-  display: block;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 70px;
-  left: 0%;
-  text-align: center;
-  z-index: 1;
-  background-color: #f5f3ec;
-  transition: all 0.3s ease-out;
-}
-.hiddenAll {
-  display: none;
-}
 /* Content */
 main {
   display: block;
@@ -609,63 +547,5 @@ div.footer__logo img {
   }
   @media (max-width:768px) {
     
-  /* menu icon */
-  div.menu-btn {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    cursor: pointer;
-    width: 30px;
-    height: 20px;
-    color: #253059;
-    top: 50px;
-    right: 91px;
-  }
-
-  div.menu-btn div.btn-line {
-    width: 24px;
-    height: 3px;
-    background: #000;
-    margin: 5px auto;
-    transition-timing-function: ease-out;
-  }
-
-  /*Animate lines*/
-  .menu-btn.open .btn-line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-btn.open .btn-line:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-
-  .menu-btn.open .btn-line:nth-child(3) {
-    transform: translateY(-6px) rotate(-43deg);
-  }
-
-  .header__contactInfo {
-    margin-top: 20px;
-  }
-
-  /* Menu in button */
-  div.header__fixedNav-menuLinks > nav > ul,
-  .header__fixedNav-menuLinks-active {
-    display: none;
-  }
-  div.menuTablet {
-    display: block;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 70px;
-    left: 0%;
-    text-align: center;
-    z-index: 1;
-    background-color: #f5f3ec;
-    transition: all 0.3s ease-out;
-  }
-  .hiddenAll {
-    display: none;
-  }
+ 
 }
