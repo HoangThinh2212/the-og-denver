@@ -25,7 +25,7 @@
 //     overlay.classList.remove('active')
 
 // }
-const openModalBtn = document.getElementById("openModalBtn");
+const openModalBtn = document.getElementById("crew-box");
 const closeBtn = document.getElementById("close-btn");
 const overlay = document.getElementById("overLay");
 
@@ -35,11 +35,36 @@ function toggleModal() {
   personalInfo.classList.toggle("active");
   overlay.classList.toggle("active");
 }
-openModalBtn.addEventListener("click", toggleModal);
+openModalBtn.addEventListener("click", toggleModal());
 
-closeBtn.addEventListener("click", toggleModal);
+closeBtn.addEventListener("click", toggleCloseModal());
+function toggleCloseModal() {
+  const personalInfo = document.querySelector(".personalinfo");
+  personalInfo.classList.remove("active");
+  overlay.classList.remove("active");
+}
 
 
+
+
+
+
+const openModalBtn2 = document.getElementById("crew-box");
+const closeBtn2 = document.getElementById("close-btn");
+const overlay2 = document.getElementById("overLay2");
+function toggleModal2() {
+  const personalInfo2 = document.querySelector(".personalinfo2");
+  personalInfo2.classList.toggle("active");
+  overlay2.classList.toggle("active");
+}
+openModalBtn2.addEventListener("click", toggleModal2());
+
+closeBtn.addEventListener("click", toggleCloseModal2());
+function toggleCloseModal2() {
+  const personalInfo2 = document.querySelector(".personalinfo2");
+  personalInfo2.classList.remove("active");
+  overlay2.classList.remove("active");
+}
 
 
 

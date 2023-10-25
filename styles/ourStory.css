@@ -324,6 +324,7 @@ a.arrow-info i {
 
 .menu_icon {
   margin-right: 10px; 
+  margin-top: -48px;
 }
 
 .ourmenu p {
@@ -402,6 +403,7 @@ section.theogcrew img.tripleDiamond {
   position: relative;
   height: 800px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .crew-box {
@@ -436,9 +438,7 @@ section.theogcrew img.tripleDiamond {
 .crew-box h4 {
   padding-top: 30px;
 }
-.crew-box {
-  position: relative;
-}
+
 
 .personalinfo {
   position: fixed;
@@ -487,7 +487,58 @@ div.infobody h1 {
   opacity: 0;
   z-index: 1000;
 }
-#overLay.active {
+#overLay2.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.personalinfo2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: none;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  background-color: none;
+  width: 100vw;
+  z-index: 100;
+  color: white !important;
+}
+.personalinfo2.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.close-btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff !important;
+}
+div.infobody2 p  {
+  text-align: center;
+  padding: 0 300px;
+  color: white !important;
+}
+div.infobody2 h1 {
+  text-align: center;
+  padding: 0 300px;
+  color: white !important;
+}
+#overLay2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1002;
+}
+#overLay2.active {
   opacity: 1;
   pointer-events: all;
 }
@@ -617,6 +668,7 @@ div.footer__logo img {
   .ourstory_2{
     flex-wrap: wrap-reverse;
   }
+
 }
 
 
@@ -689,5 +741,65 @@ div.footer__logo img {
     flex-wrap: wrap-reverse
   }
 }
-  
-  
+div.menu-btn {
+  display: none;
+}
+
+div.menu-btn {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    color: #253059;
+    top: 50px;
+    right: 91px;
+  }
+
+  div.menu-btn div.btn-line {
+    width: 24px;
+    height: 3px;
+    background: #000;
+    margin: 5px auto;
+    transition-timing-function: ease-out;
+  }
+
+  /*Animate lines*/
+  .menu-btn.open .btn-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-btn.open .btn-line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-btn.open .btn-line:nth-child(3) {
+    transform: translateY(-6px) rotate(-43deg);
+  }
+
+  .header__contactInfo {
+    margin-top: 20px;
+  }
+
+  /* Menu in button */
+  div.header__fixedNav-menuLinks > nav > ul,
+  .header__fixedNav-menuLinks-active {
+    display: none;
+  }
+  div.menuTablet {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 70px;
+    left: 0%;
+    text-align: center;
+    z-index: 1;
+    background-color: #f5f3ec;
+    transition: all 0.3s ease-out;
+  }
+  .hiddenAll {
+    display: none;
+  }  

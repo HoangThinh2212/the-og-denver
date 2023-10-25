@@ -107,7 +107,68 @@
           </div>
         </nav>
       </header>
+      <!--Button used for mobile and tablet-->
+      <div
+        class="menu-btn"
+        onclick="openNav()"
+        data-toggle="collapse"
+        href="#menuTablet"
+        role="button"
+        data-target="#menuTablet"
+        aria-expanded="false"
+        aria-controls="menuTablet"
+      >
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
 
+      <!-- Menu inside button while mobile and tablet -->
+      <div class="menuTablet collapse" id="menuTablet">
+        <nav class="menuTablet">
+          <!-- List Navigations -->
+          <ul class="menuTablet">
+            <li>
+              <a href="./hoursLocation.html" class="opt">HOURS & LOCATION</a>
+            </li>
+            <li><a href="./menus.html" class="opt">MENUS</a></li>
+            <li>
+              <a href="./ourStory.html" class="opt">OUR STORY</a>
+            </li>
+            <li>
+              <a href="./happenings.html" class="opt">HAPPENINGS</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">PRIVATE EVENTS</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">ORDER ONLINE</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">JOIN THE OG FAMILY</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">GIFT CARDS</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">PRIVACY POLICY</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">PRESS</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">CONTACT</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">RESERVATIONS</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt_2">EMAIL SIGNUP</a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+      </div>
       <!-- Content -->
       <main>
         <section
@@ -192,7 +253,9 @@
           <div class="ourmenu">
             <div class="ourmenu_head">
               <h1><b>OUR MENU</b></h1>
-              <div class="menu_icon"><img src="/img/icons/Logo_steak.png" alt="" /></div>
+              <div class="menu_icon">
+                <img src="/img/icons/Logo_steak.png" alt="" />
+              </div>
             </div>
 
             <p>
@@ -230,7 +293,9 @@
           <div class="exp">
             <div class="exp_head">
               <h1><b>THE OG EXPERIENCE</b></h1>
-              <div class="exp_icon"><img src="img/icons/illustration_2.png" alt="" /></div>
+              <div class="exp_icon">
+                <img src="img/icons/illustration_2.png" alt="" />
+              </div>
             </div>
 
             <p>
@@ -288,34 +353,95 @@
           data-aos-once="true"
           data-aos-offset="50"
         >
-          <div class="crew-box" id="crew-box">
+          <div class="crew-box" onclick="toggleModal()" id="crew-box">
             <div class="zoom">
               <img src="img/our_story_img/pic_7.avif" alt="" />
             </div>
             <h4><b>EDWARD DE DECKER</b></h4>
             <p>General Mananger</p>
-          <div class="crew-box" id="crew-box">
+          </div>
+          <div class="crew-box" onclick="toggleModal2() "id="crew-box">
             <div class="zoom">
               <img src="img/our_story_img/pic_8.avif" alt="" />
             </div>
             <h4><b>STEPHEN GREER</b></h4>
-            <p>Executive chef</p>      
+            <p>Executive chef</p>
           </div>
         </section>
         <section class="crew1-info">
-          <div class="personalinfo" onclick="toggleModal()">
-            <button class="close-btn" id="close-btn">&times;</button>
+          <div class="personalinfo" >
+            <button class="close-btn" id="close-btn" onclick="toggleCloseModal()">&times;</button>
             <div class="infobody">
-              <h1>EDWARD DE DECKE</h1>
+              <h1>EDWARD DE DECKER</h1>
               <p>General Manager</p>
-              <p>Born in Montelimar, France, de Decker moved to Maryland with his family at a young age. de Decker went back to France every summer to work with his grandfather, on his farm in Provence. During the evenings de Decker would spend time in the kitchen with his grandmother, watching and helping her cook large family dinners. In his early years, de Decker found an immense passion for cooking, food, and the hospitality industry. </p>
-              <p>At 16, de Decker got his first job shucking oysters at Black’s Bar & Kitchen, in Maryland, and doing any job he could get his hands on from hosting and bussing tables to working in the kitchen as a prep cook. Before graduating from Virginia Tech’s R.B. Pamplin College of Business with a Bachelor of Science degree in business, with an emphasis in hospitality & tourism management, de Decker interned at The Balmoral Hotel in Edinburgh, Scotland, where he gained experience working at the one Michelin star restaurant, Number One. </p>
-              <p>Prior to joining Sage Restaurant Concepts, de Decker was the Assistant General Manager and Beverage Manager at Old Major, where he curated the bar and cocktail program and wine list. de Decker has held multiple food and beverage leadership roles, including experience as an Assistant Restaurant Manager at The Ritz-Carlton Downtown Denver and JW Marriott Desert Springs Resort & Spa in Palm Desert, where he oversaw various dining outlets. During his time at JW Marriott Desert Springs Resort & Spa, de Decker was acknowledged with the Griffin Award for strongly representing the vision of the JW Marriott brand and culture. </p>
-              <p>de Decker joined the Sage Restaurant Concepts team in February 2021 as an Assistant General Manager for The Rally Hotel’s two signature culinary concepts, The Original and The Rally Bar. With more than ten years of experience in the hospitality & tourism industry and an affinity for exemplary service and leadership, he was quickly promoted to General Manager in August 2021. de Decker draws from all his past experiences to help mentor and train his team towards success.</p>
+              <p>
+                Born in Montelimar, France, de Decker moved to Maryland with his
+                family at a young age. de Decker went back to France every
+                summer to work with his grandfather, on his farm in Provence.
+                During the evenings de Decker would spend time in the kitchen
+                with his grandmother, watching and helping her cook large family
+                dinners. In his early years, de Decker found an immense passion
+                for cooking, food, and the hospitality industry.
+              </p>
+              <p>
+                At 16, de Decker got his first job shucking oysters at Black’s
+                Bar & Kitchen, in Maryland, and doing any job he could get his
+                hands on from hosting and bussing tables to working in the
+                kitchen as a prep cook. Before graduating from Virginia Tech’s
+                R.B. Pamplin College of Business with a Bachelor of Science
+                degree in business, with an emphasis in hospitality & tourism
+                management, de Decker interned at The Balmoral Hotel in
+                Edinburgh, Scotland, where he gained experience working at the
+                one Michelin star restaurant, Number One.
+              </p>
+              <p>
+                Prior to joining Sage Restaurant Concepts, de Decker was the
+                Assistant General Manager and Beverage Manager at Old Major,
+                where he curated the bar and cocktail program and wine list. de
+                Decker has held multiple food and beverage leadership roles,
+                including experience as an Assistant Restaurant Manager at The
+                Ritz-Carlton Downtown Denver and JW Marriott Desert Springs
+                Resort & Spa in Palm Desert, where he oversaw various dining
+                outlets. During his time at JW Marriott Desert Springs Resort &
+                Spa, de Decker was acknowledged with the Griffin Award for
+                strongly representing the vision of the JW Marriott brand and
+                culture.
+              </p>
+              <p>
+                de Decker joined the Sage Restaurant Concepts team in February
+                2021 as an Assistant General Manager for The Rally Hotel’s two
+                signature culinary concepts, The Original and The Rally Bar.
+                With more than ten years of experience in the hospitality &
+                tourism industry and an affinity for exemplary service and
+                leadership, he was quickly promoted to General Manager in August
+                2021. de Decker draws from all his past experiences to help
+                mentor and train his team towards success.
+              </p>
             </div>
           </div>
           <div id="overLay"></div>
-        </div>
+        </section>
+        <section class="crew2-info">
+          <div class="personalinfo2" >
+            <button class="close-btn" id="close-btn" onclick="toggleCloseModal2()">&times;</button>
+            <div class="infobody2">
+              <h1>STEPHEN GREER</h1>
+              <p>Executive Chef</p>
+              <p>
+                Stephen Greer is the executive chef of The Original, located within The Rally Hotel at McGregor Square and operated by Sage Restaurant Concepts. The Original reinvents the neighborhood eatery, combining timeless inspiration from classic Americana with inventive and playful modern flair.  
+              </p>
+              <p>
+                Greer began his culinary career as head chef at Embassy Suites Hotel in Denver, and he’s since garnered more than 15 years of culinary experience at esteemed restaurants, hotels and clubs in Colorado, Texas and California. Most recently, he served as executive chef of Frank’s Chophouse in Boulder, Colo., where he helped redevelop the restaurant under new ownership during the turbulency of the pandemic, overseeing a team of 20 with a successful and profitable return.
+              </p>
+              <p>
+                Prior to that, he served as executive chef at Johnny’s Italian Steakhouse in Thornton, Colo., and held executive, banquet and sous chef positions at Hotel Crescent Court in Dallas, Pullman Hotel in San Francisco, and at a variety of Colorado private clubs including Cherry Creek Country Club, Valley Country Club and Fossil Trace Golf Club.
+              git</p>
+              <p>
+                Greer utilizes his expertise and knowledge as it pertains to utilizing the highest quality proteins, local sourcing, scratch cooking and fine dining to demonstrate even simple, delicious comfort food can be an elevated and quality experience. He is a graduate of Paragon Culinary School in Colorado Springs, where he obtained his Certificate of Culinary Mastery.
+              </p>
+            </div>
+          </div>
+          <div id="overLay2"></div>
         </section>
       </main>
 
@@ -497,6 +623,26 @@
         }
 
         isAutoplayPlaying = !isAutoplayPlaying;
+      });
+      // Button used for mobile and tablet
+      const menuBtn = document.querySelector(".menu-btn");
+
+      let menuOpen = false;
+      menuBtn.addEventListener("click", () => {
+        if (!menuOpen) {
+          menuBtn.classList.add("open");
+          document.getElementById("header").classList.add("hiddenAll");
+          document.getElementById("main").classList.add("hiddenAll");
+          document.getElementById("footer").classList.add("hiddenAll");
+
+          menuOpen = true;
+        } else {
+          menuBtn.classList.remove("open");
+          document.getElementById("header").classList.remove("hiddenAll");
+          document.getElementById("main").classList.remove("hiddenAll");
+          document.getElementById("footer").classList.remove("hiddenAll");
+          menuOpen = false;
+        }
       });
     </script>
     <script src="js/ourStory.js"></script>
