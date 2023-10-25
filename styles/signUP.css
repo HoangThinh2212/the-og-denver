@@ -82,14 +82,13 @@ div.menu-btn {
   .header__fixedNav-menuLinks-active {
     margin-left: 15px;
     padding: 86px 0 20px 0;
-    /* padding-top: 86px;
-    padding-bottom: 20px; */
   }
   .header__fixedNav-menuLinks-active nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 21px;
+    align-items: center;
   }
   .header__fixedNav-menuLinks-active nav ul li a.opt {
     font-size: 17px;
@@ -116,14 +115,14 @@ div.menu-btn {
   .header__fixedNav-menuLinks-active nav ul li a.active {
     border-bottom: 3px #000 solid;
   }
-  .header__fixedNav-menuLinks-active nav ul li a.button {
+  .header__fixedNav-menuLinks-active nav ul li button {
     border: 2px solid #000;
     margin-left: -3px;
     padding: 9px 25px 9px 25px;
     font-size: 15.7px;
     font-weight: 600;
   }
-  .header__fixedNav-menuLinks-active a.button:hover {
+  .header__fixedNav-menuLinks-active button:hover {
     text-decoration: none;
     background-color: #fbc165;
     transition: ease 0.4s;
@@ -156,13 +155,14 @@ div.menu-btn {
   }
   .header__fixedNav-menuLinks {
     margin-left: -37px;
-    padding-top: 37px;
+    padding-top: 26px;
   }
   .header__fixedNav-menuLinks nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
+    align-items: center;
   }
   .header__fixedNav-menuLinks nav ul li a.opt {
     font-size: 17px;
@@ -189,14 +189,14 @@ div.menu-btn {
   a.active {
     border-bottom: 3px #000 solid;
   }
-  .header__fixedNav-menuLinks nav ul li a.button {
+  .header__fixedNav-menuLinks nav ul li button {
     border: 2px solid #000;
     margin-left: -3px;
     padding: 9px 25px 9px 25px;
     font-size: 15.7px;
     font-weight: 600;
   }
-  .header__fixedNav-menuLinks a.button:hover {
+  .header__fixedNav-menuLinks button:hover {
     text-decoration: none;
     background-color: #fbc165;
     transition: ease 0.4s;
