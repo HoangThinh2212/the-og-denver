@@ -273,7 +273,98 @@ a.arrow-info i {
   color: #fff !important;
 }
 /* infoMenus */
-
+section.banner1 {
+  margin-top: 50px;
+  padding-top: 43px;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+  text-align: center;
+}
+section.banner1 h1 {
+  font-weight: 900;
+  font-size: 62px;
+  font-stretch: semi-condensed;
+  font-family: 'bicyclette';
+}
+section.banner1 img.tripleDiamond {
+  width: 100%;
+  height: 100%;
+  max-width: 113px;
+  max-height: 106px;
+  object-fit: cover;
+  margin: 4px 0 32px 0;
+}
+section.intro{
+  text-align: center;
+  padding: 30px;
+}
+.intro p{
+  font-size: 18px;
+}
+.contact{
+  font-size: x-small;
+  margin: 40px auto;
+}
+button {
+  border: 2px solid #000;
+  margin-left: -3px;
+  padding: 9px 25px 9px 25px;
+  font-size: 15.7px;
+  font-weight: 600;
+  margin-top: 40px;
+  width: 240px;
+}
+button:hover {
+  text-decoration: none;
+  background-color: #fbc165;
+  transition: ease 0.4s;
+}
+div.container{
+  text-align: center;
+  align-items: center;
+}
+.container img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  max-width: 410px;
+  max-height: 332px;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  transition: transform 0.3s;
+}
+section.bigcontainer{
+  display: flex;
+}
+.container p{
+  padding: 10px 1rem
+}
+.zoom {
+  /* border: 1px solid #ccc; */
+  height: auto;
+  /* margin: 10px auto; */
+  overflow: hidden;
+  position: relative;
+}
+.zoom img {
+  max-width: 100%;
+  transition: all 1s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.zoom:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.endbtn {
+  text-align: center;
+  margin: 75px auto;
+}
+.endbtn button {
+  width: 158px;
+  height: 48px;
+}
 /* Footer */
 div.footer__logo {
   display: flex;
@@ -368,4 +459,22 @@ div.footer__logo img {
   text-decoration: none;
   background-color: #fcba4f;
   transition: ease 0.4s;
+}
+@media (max-width: 991.98px) {
+  .intro p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .intro p {
+    font-size: 0.85rem;
+    margin: 8px 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .intro p {
+    font-size: 0.8rem;
+    margin: 6px 0;
+  }
 }
