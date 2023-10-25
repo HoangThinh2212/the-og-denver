@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contacnt Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="/img/icons/Logo_sticky.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/signUP.css" />
+    <link rel="stylesheet" href="/styles/common.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="/styles/flickity.css" />
+    <!-- Flickity Fade CSS -->
+    <link rel="stylesheet" href="/styles/flickity-fade.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Border for Website -->
+      <div class="borderOverlay"></div>
+      <!-- Header -->
+      <header>
+        <!-- Address and Telephone -->
+        <div class="header__contactInfo">
+          <a href="https://goo.gl/maps/68KneS8v2rYyehNq5" target="_blank"
+            >1600 20th St, Denver, CO 80202</a
+          >
+          <a href="tel:+720.769.1414">720.769.1414</a>
+        </div>
+        <!-- Menu List -->
+        <nav id="navbar" class="header__fixedNav">
+          <div class="header__fixedNav-logo">
+            <a href="./index.html">
+              <img
+                src="/img/icons/Logo_primary.png"
+                alt="Logo OG"
+                width="110px"
+                height="auto"
+                id="logo"
+              />
+              <img
+                src="/img/icons/Logo_sticky.png"
+                alt="Logo OG"
+                width="110px"
+                height="auto"
+                id="logo-fixedNav"
+              />
+            </a>
+          </div>
+          <div id="menuLinks" class="header__fixedNav-menuLinks">
+            <nav>
+              <!-- List Navigations -->
+              <ul>
+                <li>
+                  <a href="./hoursLocation.html" class="opt"
+                    >HOURS & LOCATION</a
+                  >
+                </li>
+                <li><a href="./menus.html" class="opt active">MENUS</a></li>
+                <li><a href="./ourStory.html" class="opt">OUR STORY</a></li>
+                <li><a href="./happenings.html" class="opt">HAPPENINGS</a></li>
+                <li>
+                  <a href="./privateEvent.html" class="opt">PRIVATE EVENTS</a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.theogdenver.com/online-ordering/"
+                    class="opt"
+                    >ORDER ONLINE</a
+                  >
+                </li>
+                <li>
+                  <button class="button" id="open-modal">RESERVATIONS</button>
+                  <dialog data-modal class="modal" id="myModal">
+                    <div class="close_button">
+                      <button
+                        type="button"
+                        class="close"
+                        tabindex="0"
+                        autofocus
+                        data-close-modal
+                      >
+                        <span class="close-icon">Close</span>
+                      </button>
+                    </div>
+
+                    <div class="modal_content">
+                      <div class="modal_heading form-heading">
+                        <h2>RESERVATIONS</h2>
+                        <img
+                          class="tripleDiamond"
+                          src="/img/icons/triple_diamond.png"
+                          alt="triple_diamond"
+                        />
+                      </div>
+                      <div class="form-ui">
+                        <label role="presentation" class="input-populated">
+                          <span class="input-label"
+                            >Number of People<span class="input-label-required"
+                              >- Optional</span
+                            ></span
+                          >
+                          <div class="form-group">
+                            <select
+                              class="form-select form-select-lg mb-3"
+                              aria-label="Large select example"
+                            >
+                              <option value selected disabled>
+                                Number of People
+                              </option>
+                              <option value="numberOfPeople">1 person</option>
+                              <option value="numberOfPeople">2 person</option>
+                              <option value="numberOfPeople">3 person</option>
+                              <option value="numberOfPeople">4 person</option>
+                              <option value="numberOfPeople">5 person</option>
+                              <option value="numberOfPeople">6 person</option>
+                              <option value="numberOfPeople">7 person</option>
+                              <option value="numberOfPeople">8+ person</option>
+                            </select>
+                            <span class="form-group--icon" aria-hidden="true">
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                            <div
+                              id="date-picker-example"
+                              class="md-form md-outline input-with-post-icon datepicker"
+                              inline="true"
+                            >
+                              <input
+                                placeholder="Select date"
+                                type="text"
+                                id="example"
+                                class="form-control"
+                              />
+                              <label for="example">Try me...</label>
+                              <i class="fas fa-calendar input-prefix"></i>
+                            </div>
+                            <select id="time" class="form-control" name="time">
+                              <option value="" selected="" disabled="">
+                                Time
+                              </option>
+
+                              <option value="2300">11:00 PM</option>
+
+                              <option value="2230">10:30 PM</option>
+
+                              <option value="2200">10:00 PM</option>
+
+                              <option value="2130">9:30 PM</option>
+
+                              <option value="2100">9:00 PM</option>
+
+                              <option value="2030">8:30 PM</option>
+
+                              <option value="2000">8:00 PM</option>
+
+                              <option value="1930">7:30 PM</option>
+
+                              <option value="1900">7:00 PM</option>
+
+                              <option value="1830">6:30 PM</option>
+
+                              <option value="1800">6:00 PM</option>
+
+                              <option value="1730">5:30 PM</option>
+
+                              <option value="1700">5:00 PM</option>
+
+                              <option value="1630">4:30 PM</option>
+
+                              <option value="1600">4:00 PM</option>
+
+                              <option value="1530">3:30 PM</option>
+
+                              <option value="1500">3:00 PM</option>
+
+                              <option value="1430">2:30 PM</option>
+
+                              <option value="1400">2:00 PM</option>
+
+                              <option value="1330">1:30 PM</option>
+
+                              <option value="1300">1:00 PM</option>
+
+                              <option value="1230">12:30 PM</option>
+
+                              <option value="1200">12:00 PM</option>
+
+                              <option value="1130">11:30 AM</option>
+
+                              <option value="1100">11:00 AM</option>
+
+                              <option value="1030">10:30 AM</option>
+
+                              <option value="1000">10:00 AM</option>
+
+                              <option value="0930">9:30 AM</option>
+
+                              <option value="0900">9:00 AM</option>
+
+                              <option value="0830">8:30 AM</option>
+
+                              <option value="0800">8:00 AM</option>
+
+                              <option value="0730">7:30 AM</option>
+
+                              <option value="0700">7:00 AM</option>
+                            </select>
+                          </div>
+                          <button type="submit" class="btn btn-brand-alt">Find A Table</button>
+                        </label>
+                      </div>
+                    </div>
+                  </dialog>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </nav>
+      </header>
+        <!--Button used for mobile and tablet-->
+      <div
+      class="menu-btn"
+      onclick="openNav()"
+      data-toggle="collapse"
+      href="#menuTablet"
+      role="button"
+      data-target="#menuTablet"
+      aria-expanded="false"
+      aria-controls="menuTablet"
+    >
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <!-- Menu inside button while mobile and tablet -->
+    <div class="menuTablet collapse" id="menuTablet">
+      <nav class="menuTablet">
+        <!-- List Navigations -->
+        <ul class="menuTablet">
+          <li>
+            <a href="./hoursLocation.html" class="opt">HOURS & LOCATION</a>
+          </li>
+          <li><a href="./menus.html" class="opt">MENUS</a></li>
+          <li>
+            <a href="./ourStory.html" class="opt">OUR STORY</a>
+          </li>
+          <li>
+            <a href="./happenings.html" class="opt">HAPPENINGS</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">PRIVATE EVENTS</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">ORDER ONLINE</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">JOIN THE OG FAMILY</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">GIFT CARDS</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">PRIVACY POLICY</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">PRESS</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">CONTACT</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">RESERVATIONS</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt_2">EMAIL SIGNUP</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+    </div>
+      <!-- Content -->
+      <main>
+        <section class="infoHL">
+          <h1>CONTACT</h1>
+          <img
+            class="tripleDiamond"
+            src="/img/icons/triple_diamond.png"
+            alt="triple_diamond"
+          />
+          <p>
+            Send us a message and we’ll get back to you as soon as possible.
+            Looking forward to hearing from you.
+          </p>
+        </section>
+        <div class="content">
+          <div class="form-ui">
+            <label for="name">
+              <i class="error-label"></i>
+              <span class="input-label"
+                >Name<span class="input-label-required">- Required</span></span
+              >
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Name"
+                required
+              />
+            </label>
+            <label for="email">
+              <i class="error-label"></i>
+              <span class="input-label"
+                >Email<span class="input-label-required">- Required</span></span
+              >
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+            </label>
+            <label for="number">
+              <i class="error-label"></i>
+              <span class="input-label"
+                >Phone Number<span class="input-label-required"
+                  >- Required</span
+                ></span
+              >
+              <input
+                type="number"
+                id="pnumber"
+                class="form-control"
+                placeholder="Phone Number"
+                required
+                data-input-validator="phone"
+              />
+            </label>
+            <label role="presentation" class="input-populated">
+              <span class="input-label"
+                >What are you getting in touch about?<span
+                  class="input-label-required"
+                  >- Optional</span
+                ></span
+              >
+              <div class="form-group">
+                <select
+                  class="form-select form-select-lg mb-3"
+                  aria-label="Large select example"
+                >
+                  <option value selected disabled>
+                    What are you getting in touch about?
+                  </option>
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Press Inquiry">Press Inquiry</option>
+                </select>
+                <span class="form-group--icon" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </div>
+            </label>
+            <label for="comment-form">
+              <i class="error-label"></i>
+              <span class="input-label"
+                >Your Message<span class="input-label-required"
+                  >- Required</span
+                ></span
+              >
+              <textarea
+                type="text"
+                id="comment-form"
+                class="form-control"
+                placeholder="Your Message"
+                rows="6"
+                cols="50"
+                required
+              ></textarea>
+            </label>
+          </div>
+          <div class="form-button">
+            <button type="submit" class="btn btn-brand">Send</button>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div
+          class="footer__logo"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out-quart"
+          data-aos-once="true"
+          data-aos-offset="50"
+        >
+          <img
+            src="/img/icons/Hosp_logo.png"
+            alt="hosp_logo"
+            width="50px"
+            height="50px"
+          />
+        </div>
+        <div class="footer__navigations">
+          <div class="footer__social-links">
+            <ul>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-navs">
+            <ul>
+              <li>
+                <a
+                  class="opt"
+                  target="_blank"
+                  href="https://sagehospitality.jobs/"
+                  >JOIN THE OG FAMILY</a
+                >
+              </li>
+              <li>
+                <a
+                  class="opt"
+                  target="_blank"
+                  href="https://sagerestaurantconcepts.cardfoundry.com/giftcards"
+                  >GIFT CARDS</a
+                >
+              </li>
+              <li>
+                <a
+                  class="opt"
+                  target="_blank"
+                  href="https://www.sagehospitality.com/privacy-policy/"
+                  >PRIVACY POLICY</a
+                >
+              </li>
+              <li><a class="opt" target="_blank" href="#">PRESS</a></li>
+              <li><a class="opt" target="_blank" href="#">CONTACT</a></li>
+              <li>
+                <a
+                  class="opt"
+                  target="_blank"
+                  href="https://www.sagehospitalitygroup.com/privacy-policy/"
+                  >PRIVACY POLICY</a
+                >
+              </li>
+              <li>
+                <a href="" target="_blank" class="button">EMAIL SIGNUP</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fixed Navbar -->
+    <script>
+      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 10 ||
+          document.documentElement.scrollTop > 10
+        ) {
+          document
+            .getElementById("navbar")
+            .classList.remove("header__fixedNav");
+          document
+            .getElementById("menuLinks")
+            .classList.remove("header__fixedNav-menuLinks");
+          document
+            .getElementById("navbar")
+            .classList.add("header__fixedNav-active");
+          document
+            .getElementById("menuLinks")
+            .classList.add("header__fixedNav-menuLinks-active");
+
+          document.getElementById("logo").classList.remove("active");
+          document.getElementById("logo-fixedNav").classList.add("active");
+        } else {
+          document
+            .getElementById("navbar")
+            .classList.remove("header__fixedNav-active");
+          document
+            .getElementById("menuLinks")
+            .classList.remove("header__fixedNav-menuLinks-active");
+          document.getElementById("navbar").classList.add("header__fixedNav");
+          document
+            .getElementById("menuLinks")
+            .classList.add("header__fixedNav-menuLinks");
+
+          document.getElementById("logo").classList.add("active");
+          document.getElementById("logo-fixedNav").classList.remove("active");
+        }
+      }
+    </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Flickity JS -->
+    <script src="/js/flickity.js"></script>
+    <!-- Flickity Fade JS -->
+    <script src="/js/flickity-fade.js"></script>
+    <script>
+      var flkty = new Flickity(".carousel", {
+        autoPlay: 4700,
+        pauseAutoPlayOnHover: false,
+        fade: true,
+        imagesLoaded: true,
+        prevNextButtons: false,
+        rewind: true,
+      });
+
+      // Toggle between Pause and Play Carousel
+      const playIcon = document.getElementById("playIcon");
+      const pauseIcon = document.getElementById("pauseIcon");
+
+      var toggleButton = document.getElementById("playPauseButton");
+      var isAutoplayPlaying = true;
+      playIcon.style.display = "none";
+      pauseIcon.style.display = "inline";
+
+      toggleButton.addEventListener("click", function () {
+        if (isAutoplayPlaying) {
+          flkty.pausePlayer();
+          pauseIcon.style.display = "none";
+          playIcon.style.display = "inline";
+          playIcon.classList.add("fa-play");
+          pauseIcon.classList.remove("fa-pause");
+        } else {
+          flkty.playPlayer();
+          playIcon.style.display = "none";
+          pauseIcon.style.display = "inline";
+          pauseIcon.classList.add("fa-pause");
+          playIcon.classList.remove("fa-play");
+        }
+
+        isAutoplayPlaying = !isAutoplayPlaying;
+      });
+    </script>
+    <script>
+      //  Button used for mobile and tablet
+      const menuBtn = document.querySelector(".menu-btn");
+
+      let menuOpen = false;
+      menuBtn.addEventListener("click", () => {
+        if (!menuOpen) {
+          menuBtn.classList.add("open");
+          document.getElementById("header").classList.add("hiddenAll");
+          document.getElementById("main").classList.add("hiddenAll");
+          document.getElementById("footer").classList.add("hiddenAll");
+
+          menuOpen = true;
+        } else {
+          menuBtn.classList.remove("open");
+          document.getElementById("header").classList.remove("hiddenAll");
+          document.getElementById("main").classList.remove("hiddenAll");
+          document.getElementById("footer").classList.remove("hiddenAll");
+          menuOpen = false;
+        }
+      });
+    </script>
+  </body>
+</html>

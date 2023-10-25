@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The OG | Craveable Breakfast & Brunch</title>
+    <link
+      rel="shortcut icon"
+      href="/img/icons/Logo_sticky.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="/styles/common.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="/styles/flickity.css" />
+    <!-- Flickity Fade CSS -->
+    <link rel="stylesheet" href="/styles/flickity-fade.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/press.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Border for Website -->
+      <div class="borderOverlay"></div>
+      <!-- Header -->
+      <header>
+        <!-- Address and Telephone -->
+        <div class="header__contactInfo">
+          <a href="https://goo.gl/maps/68KneS8v2rYyehNq5" target="_blank"
+            >1600 20th St, Denver, CO 80202</a
+          >
+          <a href="tel:+720.769.1414">720.769.1414</a>
+        </div>
+        <!-- Menu List -->
+        <nav id="navbar" class="header__fixedNav">
+          <div class="header__fixedNav-logo">
+            <a href="./index.html">
+              <img
+                src="/img/icons/Logo_primary.png"
+                alt="Logo OG"
+                width="110px"
+                height="auto"
+                id="logo"
+              />
+              <img
+                src="/img/icons/Logo_sticky.png"
+                alt="Logo OG"
+                width="110px"
+                height="auto"
+                id="logo-fixedNav"
+              />
+            </a>
+          </div>
+          <div id="menuLinks" class="header__fixedNav-menuLinks">
+            <nav>
+              <!-- List Navigations -->
+              <ul>
+                <li>
+                  <a href="./hoursLocation.html" class="opt active"
+                    >HOURS & LOCATION</a
+                  >
+                </li>
+                <li><a href="./menus.html" class="opt">MENUS</a></li>
+                <li><a href="./ourStory.html" class="opt">OUR STORY</a></li>
+                <li><a href="./happenings.html" class="opt">HAPPENINGS</a></li>
+                <li>
+                  <a href="./privateEvent.html" class="opt">PRIVATE EVENTS</a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.theogdenver.com/online-ordering/"
+                    class="opt"
+                    >ORDER ONLINE</a
+                  >
+                </li>
+                <li>
+                  <button class="button" id="open-modal">RESERVATIONS</button>
+                  <dialog data-modal class="modal" id="myModal">
+                    <div class="close_button">
+                      <button
+                        type="button"
+                        class="close"
+                        tabindex="0"
+                        autofocus
+                        data-close-modal
+                      >
+                        <span class="close-icon">Close</span>
+                      </button>
+                    </div>
+
+                    <div class="modal_content">
+                      <div class="modal_heading form-heading">
+                        <h2>RESERVATIONS</h2>
+                        <img
+                          class="tripleDiamond"
+                          src="/img/icons/triple_diamond.png"
+                          alt="triple_diamond"
+                        />
+                      </div>
+                      <div class="form-ui">
+                        <label role="presentation" class="input-populated">
+                          <span class="input-label"
+                            >Number of People<span class="input-label-required"
+                              >- Optional</span
+                            ></span
+                          >
+                          <div class="form-group">
+                            <select
+                              class="form-select form-select-lg mb-3"
+                              aria-label="Large select example"
+                            >
+                              <option value selected disabled>
+                                Number of People
+                              </option>
+                              <option value="numberOfPeople">1 person</option>
+                              <option value="numberOfPeople">2 person</option>
+                              <option value="numberOfPeople">3 person</option>
+                              <option value="numberOfPeople">4 person</option>
+                              <option value="numberOfPeople">5 person</option>
+                              <option value="numberOfPeople">6 person</option>
+                              <option value="numberOfPeople">7 person</option>
+                              <option value="numberOfPeople">8+ person</option>
+                            </select>
+                            <span class="form-group--icon" aria-hidden="true">
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                            <div
+                              id="date-picker-example"
+                              class="md-form md-outline input-with-post-icon datepicker"
+                              inline="true"
+                            >
+                              <input
+                                placeholder="Select date"
+                                type="text"
+                                id="example"
+                                class="form-control"
+                              />
+                              <label for="example">Try me...</label>
+                              <i class="fas fa-calendar input-prefix"></i>
+                            </div>
+                            <select id="time" class="form-control" name="time">
+                              <option value="" selected="" disabled="">
+                                Time
+                              </option>
+
+                              <option value="2300">11:00 PM</option>
+
+                              <option value="2230">10:30 PM</option>
+
+                              <option value="2200">10:00 PM</option>
+
+                              <option value="2130">9:30 PM</option>
+
+                              <option value="2100">9:00 PM</option>
+
+                              <option value="2030">8:30 PM</option>
+
+                              <option value="2000">8:00 PM</option>
+
+                              <option value="1930">7:30 PM</option>
+
+                              <option value="1900">7:00 PM</option>
+
+                              <option value="1830">6:30 PM</option>
+
+                              <option value="1800">6:00 PM</option>
+
+                              <option value="1730">5:30 PM</option>
+
+                              <option value="1700">5:00 PM</option>
+
+                              <option value="1630">4:30 PM</option>
+
+                              <option value="1600">4:00 PM</option>
+
+                              <option value="1530">3:30 PM</option>
+
+                              <option value="1500">3:00 PM</option>
+
+                              <option value="1430">2:30 PM</option>
+
+                              <option value="1400">2:00 PM</option>
+
+                              <option value="1330">1:30 PM</option>
+
+                              <option value="1300">1:00 PM</option>
+
+                              <option value="1230">12:30 PM</option>
+
+                              <option value="1200">12:00 PM</option>
+
+                              <option value="1130">11:30 AM</option>
+
+                              <option value="1100">11:00 AM</option>
+
+                              <option value="1030">10:30 AM</option>
+
+                              <option value="1000">10:00 AM</option>
+
+                              <option value="0930">9:30 AM</option>
+
+                              <option value="0900">9:00 AM</option>
+
+                              <option value="0830">8:30 AM</option>
+
+                              <option value="0800">8:00 AM</option>
+
+                              <option value="0730">7:30 AM</option>
+
+                              <option value="0700">7:00 AM</option>
+                            </select>
+                          </div>
+                          <button type="submit" class="btn btn-brand-alt">Find A Table</button>
+                        </label>
+                      </div>
+                    </div>
+                  </dialog>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </nav>
+      </header>
+         <!--Button used for mobile and tablet-->
+      <div
+      class="menu-btn"
+      onclick="openNav()"
+      data-toggle="collapse"
+      href="#menuTablet"
+      role="button"
+      data-target="#menuTablet"
+      aria-expanded="false"
+      aria-controls="menuTablet"
+    >
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <!-- Menu inside button while mobile and tablet -->
+    <div class="menuTablet collapse" id="menuTablet">
+      <nav class="menuTablet">
+        <!-- List Navigations -->
+        <ul class="menuTablet">
+          <li>
+            <a href="./hoursLocation.html" class="opt">HOURS & LOCATION</a>
+          </li>
+          <li><a href="./menus.html" class="opt">MENUS</a></li>
+          <li>
+            <a href="./ourStory.html" class="opt">OUR STORY</a>
+          </li>
+          <li>
+            <a href="./happenings.html" class="opt">HAPPENINGS</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">PRIVATE EVENTS</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">ORDER ONLINE</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">JOIN THE OG FAMILY</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">GIFT CARDS</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">PRIVACY POLICY</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">PRESS</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">CONTACT</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt">RESERVATIONS</a>
+          </li>
+          <li>
+            <a href="./privateEvent.html" class="opt_2">EMAIL SIGNUP</a>
+          </li>
+        </ul>
+      </nav>
+      <hr />
+    </div>
+      <!-- Content -->
+      <main>
+        <section
+          class="press_heading"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out-quart"
+          data-aos-once="true"
+          data-aos-offset="50"
+        >
+          <h1>PRESS</h1>
+          <img
+            class="tripleDiamond"
+            src="/img/icons/triple_diamond.png"
+            alt="triple_diamond"
+          />
+        </section>
+        <section class="content container">
+          <ul
+            class="card-listing row"
+            id="press"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-out-quart"
+            data-aos-once="true"
+            data-aos-offset="50"
+          >
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealed"
+              id="food_card"
+            >
+              <a
+                class="card_btn"
+                href="https://303magazine.com/2022/07/viral-foods-and-where-to-find-them-in-denver-espresso-martini/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/7202Espress_Yourself.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">303 Magazine</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Viral Foods and Where To Find Them In Denver - Espresso
+                  Martini
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.thrillist.com/eat/denver/best-restaurants-denver?_gl=1*1xpiy7m*_gcl_au*MTE5NjM0NjUyMi4xNjk3ODk3OTE4"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/703940286-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">Thrillist</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Everywhere You Need to Eat in Denver Right Now
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="hhttps://303magazine.com/2022/02/valentines-menus-2022/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/93577Raspberry_Cheesecake_Horizontal-26-.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">303 Magazine</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  60+ Lovely Dinners and Events to Fall into this Valentine's
+                  Day
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://ingoodtastedenver.com/whats-in-good-taste-in-february-2022/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/573880165-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">In Good Taste Denver</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  What's In Good Taste in February 2022
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.5280.com/make-the-most-out-of-this-years-super-bowl-valentines-day-double-header/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/748160279-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">5280</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Make the Most Out of This Year's Super Bowl-Valentine's Day
+                  Double Header
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.eatthis.com/best-dessert-menu-every-state/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/664890225-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">Eat This Not That</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  The Best Dessert Menu in Every State — Eat This Not That
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.5280.com/make-the-most-out-of-this-years-super-bowl-valentines-day-double-header/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/748160279-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">In Good Taste Denver</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  What's In Good Taste in January
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.5280.com/42-ways-to-explore-colorado-in-2022/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/436010340-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">5280</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  42 Ways to Explore Colorado in 2022
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.westword.com/restaurants/new-denver-restaurants-open-closing-2021-13117363?_gl=1*1expggh*_gcl_au*MTE5NjM0NjUyMi4xNjk3ODk3OTE4"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/90879OG_Sliders-2.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">Westword</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Restaurant Roll Call: Every Opening and Closing in 2021
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.westword.com/restaurants/best-denver-food-events-11993231?_gl=1%2Axa54pg%2A_gcl_au%2AMTE5NjM0NjUyMi4xNjk3ODk3OTE4"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/4041IMG_2743_copy.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">Westword</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  The Best Food and Drink Events in Denver This Week, November
+                  30-December 7
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://303magazine.com/2021/11/thanksgiving-denver-2021/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/15898IMG_2386_1.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">303 Magazine</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Just a moment...
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.thrillist.com/eat/denver/best-restaurants-denver?_gl=1*1x43on4*_gcl_au*MTE5NjM0NjUyMi4xNjk3ODk3OTE4"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/40478Herb_and_Peppercorn_Crusted_Prime_Rib.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">Thrillist</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Everywhere You Need to Eat in Denver Right Now
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.westword.com/restaurants/block-party-all-the-bars-and-restaurants-at-mcgregor-square-12022085?_gl=1*1392el9*_gcl_au*MTE5NjM0NjUyMi4xNjk3ODk3OTE4"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/59975Stroganoff_Poutine.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">Westword</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Block Party: All the Bars and Restaurants at McGregor Square
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://303magazine.com/2021/06/pride-events-june-2021/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/66014168484844_225638862672482_8850028960902818828_n.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">303 Magazine</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  20 Events to Celebrate Pride in Denver This June
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.westword.com/restaurants/denver-fathers-day-2021-free-deals-restaurants-11983864?_gl=1*1bsnnel*_gcl_au*MTE5NjM0NjUyMi4xNjk3ODk3OTE4"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/67014Fathers-Day-Vertical.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">Westword</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Bourbon, Bacon and Brisket: Denver's Best Father's Day
+                  Specials
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://303magazine.com/2021/06/denver-food-events-june-2021/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/436010340-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">303 Magazine</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Dig Into June – What to Eat and Drink in Denver This Month
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.thrillist.com/eat/denver/best-restaurants-denver?_gl=1*9diz8f*_gcl_au*MTE5NjM0NjUyMi4xNjk3ODk3OTE4"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/40478Herb_and_Peppercorn_Crusted_Prime_Rib.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">Thrillist</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Where to Eat in Denver Right Now
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.denverpost.com/2014/03/25/how-dwayne-johnson-kept-hercules-look-a-secret/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/75268plaza.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">The Denver Post</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  8 new Colorado hotels worth planning a vacation around this
+                  summer
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://303magazine.com/2021/05/denver-food-events-may-2021/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/436010340-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">303 Magazine</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Dig Into May – What to Eat and Drink in Denver This Month
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.forbes.com/sites/brittanyanas/2021/05/02/ahead-of-the-all-star-game-take-a-peek-inside-denvers-new-baseball-themed-hotel/?_gl=1*1h72x4z*_gcl_au*MTE5NjM0NjUyMi4xNjk3ODk3OTE4&sh=577e9a823256"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/116270199-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">Forbes</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Ahead Of The MLB All-Star Game, Take A Peek Inside Denver’s
+                  New Baseball-Themed Hotel
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://ingoodtastedenver.com/whats-in-good-taste-in-may/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/703940286-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">In Good Taste Denver</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  What's In Good Taste in May
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.cntraveler.com/story/mcgregor-square-denver-opens?_gl=1*2gczbp*_gcl_au*MTE5NjM0NjUyMi4xNjk3ODk3OTE4"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/436010340-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">Condé Nast Traveler</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  How McGregor Square Is Transforming Denver’s LoDo District
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://303magazine.com/2021/04/the-original-denver-lodo-new-restaurant/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/116270199-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">303 Magazine</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  The Original Brings Elevated Diner-Style Food in McGregor
+                  Square's Rally Hotel
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.westword.com/restaurants/new-denver-restaurants-for-the-first-week-of-april-11933457?_gl=1*10zmxx3*_gcl_au*MTE5NjM0NjUyMi4xNjk3ODk3OTE4"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/74684OG_Sliders-17.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">Westword</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Every Restaurant and Bar Opening and Closing This Week
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.denverpost.com/2014/05/31/denver-shooting-victim-drives-6-blocks-now-in-hospital/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/83680MCGREGORSQUARE-12.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">The Denver Post</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Ballpark gets a classic American diner, just in time for
+                  baseball season
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.westword.com/restaurants/best-ballpark-neighborhood-restaurants-for-coors-field-pregame-food-11931214?_gl=1*1ux64fe*_gcl_au*MTE5NjM0NjUyMi4xNjk3ODk3OTE4"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/265650040-From-the-Hip-Photo.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">Westword</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  Ballpark Neighborhood Restaurants to Hit on Rockies Opening
+                  Day
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://media-cdn.getbento.com/accounts/3c10e657dc5f2aa01b55394e8376688a/media/frq7LDmTWuJONUoM8k0U_The%20Original_Opening%20Release.docx"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/39104Short_Rib_Stroganoff.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">The Original</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  The Original Opens in Denver's McGregor Square
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.5280.com/a-mostly-complete-guide-to-everything-at-mcgregor-square/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/1115402912A0B-F1E0-4EA5-B0D0-FC2F15A82A6B.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">5280</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  McGregor Square: Everything You'll Find at the New Denver
+                  Development
+                </h2>
+              </a>
+            </li>
+            <li
+              class="food_card col-md-6 col-lg-4 card--cols-three revealable revealed"
+            >
+              <a
+                class="card_btn"
+                href="https://www.denverpost.com/2021/01/12/18-new-denver-area-restaurants-to-look-forward-to-in-2021/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="card_media">
+                  <div
+                    class="card_image image-thumbnail"
+                    style="
+                      background-image: url(/img/press_img/8485301A16C96-F356-48D8-B2E8-EAADF614418F.avif);
+                      background-position: none;
+                    "
+                  >
+                    <img class="sr-only" alt />
+                  </div>
+                </div>
+                <h3 class="card-title" role="heading">The Know</h3>
+                <h2 class="card-subtitle" role="presentation">
+                  18 new Denver-area restaurants to look forward to in 2021
+                </h2>
+              </a>
+            </li>
+          </ul>
+          <div class="loadMore">
+            <button class="load-more btn btn-brand" onclick="loadMore()">
+              Load More
+            </button>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <div
+          class="footer__logo"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out-quart"
+          data-aos-once="true"
+          data-aos-offset="50"
+        >
+          <img
+            src="/img/icons/Hosp_logo.png"
+            alt="hosp_logo"
+            width="50px"
+            height="50px"
+          />
+        </div>
+        <div class="footer__navigations">
+          <div class="footer__social-links">
+            <ul>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-navs">
+            <ul>
+              <li>
+                <a
+                  class="opt"
+                  target="_blank"
+                  href="https://sagehospitality.jobs/"
+                  >JOIN THE OG FAMILY</a
+                >
+              </li>
+              <li>
+                <a
+                  class="opt"
+                  target="_blank"
+                  href="https://sagerestaurantconcepts.cardfoundry.com/giftcards"
+                  >GIFT CARDS</a
+                >
+              </li>
+              <li>
+                <a
+                  class="opt"
+                  target="_blank"
+                  href="https://www.sagehospitality.com/privacy-policy/"
+                  >PRIVACY POLICY</a
+                >
+              </li>
+              <li><a class="opt" target="_blank" href="#">PRESS</a></li>
+              <li><a class="opt" target="_blank" href="#">CONTACT</a></li>
+              <li>
+                <a
+                  class="opt"
+                  target="_blank"
+                  href="https://www.sagehospitalitygroup.com/privacy-policy/"
+                  >PRIVACY POLICY</a
+                >
+              </li>
+              <li>
+                <a href="" target="_blank" class="button">EMAIL SIGNUP</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+    ></script>
+
+    <!-- Fixed Navbar -->
+    <script>
+      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document
+            .getElementById("navbar")
+            .classList.remove("header__fixedNav");
+          document
+            .getElementById("menuLinks")
+            .classList.remove("header__fixedNav-menuLinks");
+          document
+            .getElementById("navbar")
+            .classList.add("header__fixedNav-active");
+          document
+            .getElementById("menuLinks")
+            .classList.add("header__fixedNav-menuLinks-active");
+
+          document.getElementById("logo").classList.remove("active");
+          document.getElementById("logo-fixedNav").classList.add("active");
+        } else {
+          document
+            .getElementById("navbar")
+            .classList.remove("header__fixedNav-active");
+          document
+            .getElementById("menuLinks")
+            .classList.remove("header__fixedNav-menuLinks-active");
+          document.getElementById("navbar").classList.add("header__fixedNav");
+          document
+            .getElementById("menuLinks")
+            .classList.add("header__fixedNav-menuLinks");
+
+          document.getElementById("logo").classList.add("active");
+          document.getElementById("logo-fixedNav").classList.remove("active");
+        }
+      }
+    </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Test link -->
+    <script>
+      function loadMore() {
+        let listCard = document.querySelectorAll(".food_card");
+        for (let index = 10; index == 27; index++) {
+          listCard.classList.add(".showCard");
+        }
+      }
+    </script>
+    <script src="/js/modal.js"></script>
+    <script>
+      // Data Picker Initialization
+      $(".datepicker").datepicker({
+        inline: true,
+      });
+    </script>
+    <script>
+       const menuBtn = document.querySelector(".menu-btn");
+
+let menuOpen = false;
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    document.getElementById("header").classList.add("hiddenAll");
+    document.getElementById("main").classList.add("hiddenAll");
+    document.getElementById("footer").classList.add("hiddenAll");
+
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    document.getElementById("header").classList.remove("hiddenAll");
+    document.getElementById("main").classList.remove("hiddenAll");
+    document.getElementById("footer").classList.remove("hiddenAll");
+    menuOpen = false;
+  }
+});
+    </script>
+  </body>
+</html>
