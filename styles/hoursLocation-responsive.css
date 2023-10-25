@@ -1,10 +1,106 @@
 /* Applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-   
+  .container-fluid {
+    padding: 50px !important;
   }
-  
-  /* Applies to x-small devices (portrait phones, less than 576px) */
-  @media (max-width: 575.98px) {
-    
+  .borderOverlay {
+    border-width: 80px;
+    border-image-slice: 186 181;
+    border-image-repeat: repeat;
   }
-  
+  div.header__contactInfo a {
+    font-size: 16px;
+    margin-top: 22px;
+  }
+  div.header__contactInfo a.telInfo {
+    display: none;
+  }
+  /* menu icon */
+  div.menu-btn {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    color: #253059;
+    top: 50px;
+    right: 91px;
+  }
+
+  div.menu-btn div.btn-line {
+    width: 24px;
+    height: 3px;
+    background: #000;
+    margin: 5px auto;
+    transition-timing-function: ease-out;
+  }
+
+  /*Animate lines*/
+  .menu-btn.open .btn-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-btn.open .btn-line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-btn.open .btn-line:nth-child(3) {
+    transform: translateY(-6px) rotate(-43deg);
+  }
+
+  .header__contactInfo {
+    margin-top: 20px;
+  }
+
+  /* Menu in button */
+  div.header__fixedNav-menuLinks > nav > ul,
+  .header__fixedNav-menuLinks-active {
+    display: none;
+  }
+  div.menuTablet {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 86px;
+    left: 0%;
+    text-align: center;
+    z-index: 1;
+    background-color: #f5f3ec;
+    transition: all 0.3s ease-out;
+  }
+  .hiddenAll {
+    display: none;
+  }
+
+  /* Content */
+  .header__fixedNav-logo {
+    width: 7.2%;
+    height: 130%;
+    margin-top: -35px;
+    margin-left: -17px;
+  }
+  section.mapVisual iframe {
+    height: 24vh;
+  }
+  .header__fixedNav-active {
+    height: 5.9%;
+    top: 27px;
+  }
+  /* Footer */
+  .footer__navigations {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__menu-navs ul {
+    margin-right: 1px;
+    justify-content: center;
+  }
+}
+
+/* Applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}

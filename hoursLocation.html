@@ -91,7 +91,11 @@
                   <a href="./privateEvent.html" class="opt">PRIVATE EVENTS</a>
                 </li>
                 <li>
-                  <a href="https://www.theogdenver.com/online-ordering/" class="opt">ORDER ONLINE</a>
+                  <a
+                    href="https://www.theogdenver.com/online-ordering/"
+                    class="opt"
+                    >ORDER ONLINE</a
+                  >
                 </li>
                 <li><a href="#" class="button">RESERVATIONS</a></li>
               </ul>
@@ -99,7 +103,69 @@
           </div>
         </nav>
       </header>
+      <!--Button used for mobile and tablet-->
 
+      <div
+        class="menu-btn"
+        onclick="openNav()"
+        data-toggle="collapse"
+        href="#menuTablet"
+        role="button"
+        data-target="#menuTablet"
+        aria-expanded="false"
+        aria-controls="menuTablet"
+      >
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <!-- Menu inside button while mobile and tablet -->
+      <div class="menuTablet collapse" id="menuTablet">
+        <nav class="menuTablet">
+          <!-- List Navigations -->
+          <ul class="menuTablet">
+            <li>
+              <a href="./hoursLocation.html" class="opt">HOURS & LOCATION</a>
+            </li>
+            <li><a href="./menus.html" class="opt">MENUS</a></li>
+            <li>
+              <a href="./ourStory.html" class="opt">OUR STORY</a>
+            </li>
+            <li>
+              <a href="./happenings.html" class="opt">HAPPENINGS</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">PRIVATE EVENTS</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">ORDER ONLINE</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">JOIN THE OG FAMILY</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">GIFT CARDS</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">PRIVACY POLICY</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">PRESS</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">CONTACT</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt">RESERVATIONS</a>
+            </li>
+            <li>
+              <a href="./privateEvent.html" class="opt_2">EMAIL SIGNUP</a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+      </div>
       <!-- Content -->
       <main>
         <section
@@ -401,6 +467,30 @@
 
         isAutoplayPlaying = !isAutoplayPlaying;
       });
+
+      //  Button used for mobile and tablet
+      const menuBtn = document.querySelector(".menu-btn");
+
+      let menuOpen = false;
+      menuBtn.addEventListener("click", () => {
+        if (!menuOpen) {
+          menuBtn.classList.add("open");
+          document.getElementById("header").classList.add("hiddenAll");
+          document.getElementById("main").classList.add("hiddenAll");
+          document.getElementById("footer").classList.add("hiddenAll");
+
+          menuOpen = true;
+        } else {
+          menuBtn.classList.remove("open");
+          document.getElementById("header").classList.remove("hiddenAll");
+          document.getElementById("main").classList.remove("hiddenAll");
+          document.getElementById("footer").classList.remove("hiddenAll");
+          menuOpen = false;
+        }
+      });
+      function openNav() {
+        // document.getElementsByTagName("header").classList.add("hiddenAll");
+      }
     </script>
 
     <!-- Test link -->
