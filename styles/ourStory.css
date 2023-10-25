@@ -484,7 +484,7 @@ div.infobody h1 {
   opacity: 0;
   z-index: 1000;
 }
-#overLay2.active {
+#overLay.active {
   opacity: 1;
   pointer-events: all;
 }
